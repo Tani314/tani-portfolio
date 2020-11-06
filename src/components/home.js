@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { SectionWrapper } from '../styles/sameStyle';
-import { CanvasWrapper, HomeWrapper, HomeText ,Button} from '../styles/home';
+import { CanvasWrapper, HomeWrapper, HomeText ,Button,Span, Block2, Block1,H1,P} from '../styles/home';
 
 import { Circle, Create} from 'pts/dist/es5'
 import {QuickStartCanvas} from 'react-pts-canvas'
 // import Confetti from './canvas';
-
+import '../styles/home.css'
  var pts = []
  var colors = ["#7948B8", "#800080", "#259025", "#fff"];
 
@@ -46,10 +46,17 @@ const Home = (props) => {
 
 
       <HomeText>
-Hello, I'm <span style={{color:'#c60063'}}>Nuzhat Tabassum Tani</span>.
-<br />
-I'm a full-stack web developer.
-<br/>
+
+      <div class="title">
+            <span class="block"></span>
+            <p1>Hello, I'm Nuzhat Tabassum Tani<span></span></p1>
+        </div>
+
+        <div class="role">
+            <div class="block2"></div>
+            <p>I'm a full-stack web developer.</p>
+        </div>
+
 <Button>View my site &#8594;</Button>
 </HomeText>
 </CanvasWrapper>

@@ -20,119 +20,119 @@ import redux from '../assets/redux.png'
  import oauth from '../assets/oauth.png'
  import sequelize from '../assets/sequelize.png'
  import unity from '../assets/unity.png'
-
+import '../styles/skills.css'
 
 
 const Skills = (props) => {
   return(
-    <div>
+    <div className="all">
       <h3>Skills</h3>
       <div className="logo">
 
       <div className="skill">
-      <img src={JavaScript} width="40" height="40" alt='JavaScript'/>
-      <span className="skilltext">JavaScript</span>
+      <img src={JavaScript} width="50" height="50" alt='JavaScript'/>
+      <span1 className="skilltext">JavaScript</span1>
       </div>
 
       <div className="skill">
-      <img src={Node} width="40" height="40" alt='Node'/>
-      <span className="skilltext">Node.Js</span>
+      <img src={Node} width="50" height="50" alt='Node'/>
+      <span1 className="skilltext">Node.Js</span1>
       </div>
 
       <div className="skill">
-      <img src={sequelize} width="40" height="40"alt='sequelize'/>
-      <span className="skilltext">Sequelize</span>
+      <img src={sequelize} width="50" height="50" alt='sequelize'/>
+      <span1 className="skilltext">Sequelize</span1>
       </div>
 
       <div className="skill">
-      <img src={react} width="40" height="40"alt='react' />
-      <span className="skilltext">React</span>
+      <img src={react} width="50" height="50" alt='react' />
+      <span1 className="skilltext">React</span1>
       </div>
 
       <div className="skill">
-      <img src={redux} width="40" height="40"alt='redux' />
-      <span className="skilltext">Redux</span>
+      <img src={redux} width="50" height="50" alt='redux' />
+      <span1 className="skilltext">Redux</span1>
       </div>
 
       <div className="skill">
-      <img src={HTML5} width="40" height="40" alt='HTML5' />
-      <span className="skilltext">HTML5</span>
+      <img src={HTML5} width="50" height="50" alt='HTML5' />
+      <span1 className="skilltext">HTML5</span1>
       </div>
 
       <div className="skill">
-      <img src={CSS} width="40" height="40" alt='CSS' />
-      <span className="skilltext">CSS3</span>
+      <img src={CSS} width="50" height="50" alt='CSS' />
+      <span1 className="skilltext">CSS3</span1>
       </div>
 
       <div className="skill">
-      <img src={Postgres} width="40" height="40" alt='Postgres' />
-      <span className="skilltext">PostgreSQL</span>
+      <img src={Postgres} width="50" height="50" alt='Postgres' />
+      <span1 className="skilltext">PostgreSQL</span1>
       </div>
 
       <div className="skill">
-      <img src={Git} width="40" height="40" alt='Git' />
-      <span className="skilltext">Git</span>
+      <img src={Git} width="50" height="50" alt='Git' />
+      <span1 className="skilltext">Git</span1>
       </div>
 
       <div className="skill">
-      <img src={github} width="40" height="40" alt='github' />
-      <span className="skilltext">Github</span>
+      <img src={github} width="50" height="50" alt='github' />
+      <span1 className="skilltext">Github</span1>
       </div>
 
       <div className="skill">
-      <img src={express} width="40" height="40" alt= "express"/>
-      <span className="skilltext">Express.Js</span>
+      <img src={express} width="50" height="50" alt= "express"/>
+      <span1 className="skilltext">Express.Js</span1>
       </div>
 
       <div className="skill">
-      <img src={REST} width="40" height="40" alt='REST' />
-      <span className="skilltext">REST</span>
+      <img src={REST} width="50" height="50" alt='REST' />
+      <span1 className="skilltext">REST</span1>
       </div>
 
       <div className="skill">
-      <img src={mocha} width="40" height="40" alt='mocha'/>
-      <span className="skilltext">Mocha</span>
+      <img src={mocha} width="50" height="50"alt='mocha'/>
+      <span1 className="skilltext">Mocha</span1>
       </div>
 
       <div className="skill">
-      <img src={chai} width="40" height="40" alt='chai' />
-      <span className="skilltext">Chai</span>
+      <img src={chai} width="50" height="50" alt='chai' />
+      <span1 className="skilltext">Chai</span1>
       </div>
 
 
       <div className="skill">
-      <img src={jasmine} width="40" height="40" alt = 'jasmine'/>
-      <span className="skilltext">Jasmine</span>
+      <img src={jasmine} width="50" height="50" alt = 'jasmine'/>
+      <span1 className="skilltext">Jasmine</span1>
       </div>
 
       <div className="skill">
-      <img src={bootstrap} width="40" height="40" alt='bootstrap' />
-      <span className="skilltext">Bootstrap</span>
+      <img src={bootstrap} width="50" height="50" alt='bootstrap' />
+      <span1 className="skilltext">Bootstrap</span1>
       </div>
 
       <div className="skill">
-      <img src={graphql} width="40" height="40" alt='graphql' />
-      <span className="skilltext">GraphQL</span>
+      <img src={graphql} width="50" height="50" alt='graphql' />
+      <span1 className="skilltext">GraphQL</span1>
       </div>
 
       <div className="skill">
-      <img src={Heroku} width="40" height="40" alt='Heroku'/>
-      <span className="skilltext">Heroku</span>
+      <img src={Heroku} width="50" height="50" alt='Heroku'/>
+      <span1 className="skilltext">Heroku </span1>
       </div>
 
       <div className="skill">
-      <img src={oauth} width="40" height="40" alt='oauth'/>
-      <span className="skilltext">OAuth</span>
+      <img src={oauth} width="50" height="50" alt='oauth'/>
+      <span1 className="skilltext">OAuth</span1>
       </div>
 
       <div className="skill">
-      <img src={unity} width="40" height="40" alt='unity'/>
-      <span className="skilltext">Unity</span>
+      <img src={unity} width="50" height="50" alt='unity'/>
+      <span1 className="skilltext">Unity</span1>
       </div>
 
       <div className="skill">
-      <img src={arkit} width="40" height="40" alt='arkit'/>
-      <span className="skilltext">ARkit</span>
+      <img src={arkit} width="50" height="50" alt='arkit'/>
+      <span1 className="skilltext">ARkit</span1>
       </div>
 
       </div>
