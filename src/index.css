@@ -1,13 +1,100 @@
-body {
+body,html {
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.main {
+  text-align: center;
+}
+h2 {
+  text-decoration: underline;
+}
+.navbar {
+  align-items: center;
+  background-color: #663399;
+  top: 0;
+  height: 10px;
+  padding: 10px;
+  position: sticky;
+  position: -webkit-sticky;
+}
+#nav-text {
+  width: 95%;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hometext {
+ 
+}
+.highlight{
+  color: red
+}
+#wrapper {
+  min-height: 100%;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+a {
+  color: white;
+  text-decoration: none;
+}
+.cont{
+  color: purple
+}
+
+.photo{
+  padding: 20px;
+  width: 200px;
+  height: 230px;
+}
+
+
+.skill {
+  width: 64px;
+  max-height: 64px;
+  /* display: flex;
+  align-items: center; */
+  margin: 5px;
+  position: relative;
+  float: left;
+  }
+.skilltext {
+  visibility: hidden;
+    background-color: #ffffff;
+    color: #663399;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.skill:hover .skilltext{
+  visibility: visible;
+  opacity: 1;
+}
+.logo{
+  width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+

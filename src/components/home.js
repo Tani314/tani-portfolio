@@ -1,40 +1,60 @@
 import React from 'react';
-import { QuickStartCanvas} from "react-pts-canvas";
-import {Group,Line,Geom,Num,Const ,Pt } from "pts/dist/es5";
+
+import { SectionWrapper } from '../styles/sameStyle';
+import { CanvasWrapper, HomeWrapper, HomeText ,Button} from '../styles/home';
+
+import { Circle, Create} from 'pts/dist/es5'
+import {QuickStartCanvas} from 'react-pts-canvas'
+// import Confetti from './canvas';
+
+ var pts = []
+ var colors = ["#7948B8", "#800080", "#259025", "#fff"];
+
+
 
 
 const Home = (props) => {
   return(
-    <div>
-      <QuickStartCanvas background= "#000000" onAnimate={ (space, form, time, ftime) => {// create a line and get 200 interpolated points
-      let offset = space.size.$multiply(0.2).y;
-      let line = new Group( new Pt( 0, offset ), new Pt( space.size.x, space.size.y-offset ) );
-      let pts = Line.subpoints( line, 500 );
+    <SectionWrapper>
+      <HomeWrapper>
+    <CanvasWrapper>
 
-      //get perpendicular unit vectors from each points on the line
-      let pps = pts.map( (p) => Geom.perpendicular( p.$subtract( line[0] ).unit() ).add(p) );
+  {/* <Confetti background="#0A0A29"/> */}
 
-      let angle = space.pointer.x/space.size.x * Const.two_pi * 2;
-        // draw each perpendicular like a sine-wave
-        pps.forEach( (pp, i) => {
-          let t = i/200 * Const.two_pi + angle + Num.cycle(time%10000/10000);
+<QuickStartCanvas background="#0A0A29" style={{height:100+ 'vh'}} onStart={(bound, space)=> {
+ pts = Create.distributeRandom( space.innerBound, 700) }} onAnimate={(space,form,time, ftime) => {
 
-          if (i%2===0) {
-            pp[0].to( Geom.interpolate( pts[i], pp[0], Math.sin( t )*offset*2 ) );
-            pp[1].to( pts[i] );
-            form.stroke("#9400d3", 2).line(pp);
-          } else {
-            pp[0].to( pts[i] );
-            pp[1].to( Geom.interpolate( pts[i], pp[1], Math.cos( t )*offset*2 ) );
-            form.stroke("#800080", 2).line(pp);
-          }
+  let r = Math.abs( space.pointer.x-space.center.x )/space.center.x * 250 + 90;
+  let range = Circle.fromCenter( space.pointer, r );
 
-        });
-} }>
-       <strong>Hello, I'm Nuzhat Tabassum Tani.</strong>
-      <p>I'm a Full Stack Software Engineer.</p>
-      </QuickStartCanvas>
-    </div>
+  // check if each point is within circle's range
+  for (let i=0, len=pts.length; i<len; i++) {
+
+    if ( Circle.withinBound( range, pts[i] ) ) {
+
+      // calculate circle size
+      let dist = (r - pts[i].$subtract(space.pointer).magnitude() ) / r;
+      let p = pts[i].$subtract( space.pointer ).scale( 1+dist ).add( space.pointer );
+      form.fillOnly( colors[i%4] ).point( p, dist*25, "circle" );
+
+    } else {
+      form.fillOnly("#fff").point(pts[i], 0.5);
+    }
+
+  }
+}} />
+
+
+      <HomeText>
+Hello, I'm <span style={{color:'#c60063'}}>Nuzhat Tabassum Tani</span>.
+<br />
+I'm a full-stack web developer.
+<br/>
+<Button>View my site &#8594;</Button>
+</HomeText>
+</CanvasWrapper>
+</HomeWrapper>
+    </SectionWrapper>
   )
 }
 export default Home

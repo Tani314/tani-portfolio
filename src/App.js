@@ -1,18 +1,24 @@
 import React from 'react';
-import {Navbar,Home,About,Portfolio,Skills} from './components'
+import {Navbar,Home,About,Portfolio,Contact} from './components'
 import {HashRouter} from 'react-router-dom';
+
 
 
 const App = () => {
   return (
     <HashRouter>
-    <div>
-      <Navbar />
-      <Home/>
-      <About />
-      <Portfolio/>
-      <Skills/>
-    </div>
+
+     <Navbar />
+
+    <Home/>
+    {/* <About />
+     <Portfolio/>
+     <Contact/> */}
+
+
+    <footer>
+            Nuzhat Tabassum Tani <span>&copy;{new Date().getFullYear()}</span>
+          </footer>
     </HashRouter>
   )
 }
