@@ -51,7 +51,7 @@ const Home = (props) => {
             <span class="block"></span>
             <p1>Hello, I'm Nuzhat Tabassum Tani<span></span></p1>
         </div>
-
+<br/>
         <div class="role">
             <div class="block2"></div>
             <p>I'm a full-stack web developer.</p>

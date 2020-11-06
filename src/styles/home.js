@@ -3,16 +3,14 @@ import styled from "styled-components";
 export const HomeWrapper = styled.div`
   width: 100%;
   height: 100%;
-  display: block;
+  display: flex;
 `;
-export const Can = styled.div`
-  height: 100%;
-  min-height: 200vh;
-`;
+
 export const CanvasWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+
 `;
 
 export const Button = styled.button`
@@ -28,6 +26,7 @@ export const Button = styled.button`
 `;
 
 export const HomeText = styled.div`
+display: inline-block;
   position: absolute;
   z-index: 999;
   margin: 0 auto;

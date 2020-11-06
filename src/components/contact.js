@@ -4,8 +4,8 @@ import LinkedIn from '../assets/LinkedIn.png'
 import email from '../assets/email.png'
 import github from '../assets/github.png'
 import { SectionWrapper } from '../styles/sameStyle';
-
-
+import{Title,HR} from '../styles/about'
+import '../styles/contact.css'
 const Contact = (props) => {
   function sendEmail(e) {
     e.preventDefault();
@@ -20,8 +20,8 @@ const Contact = (props) => {
 
   return(
 <SectionWrapper>
-      <h2>Contact</h2>
-
+      <Title>Contact</Title>
+<HR/>
     Have any question or want to work with me?
 
 
@@ -35,7 +35,7 @@ const Contact = (props) => {
 
         <input type="submit" value="Send" />
       </form>
-
+<div className='contact'>
         <a href='https://www.linkedin.com/in/tani314/'>
         <img src={LinkedIn} width="40" height="40"  alt='LinkedIn'/>
         </a>
@@ -45,6 +45,7 @@ const Contact = (props) => {
         <a href='mailto: tanitabassum299@gmail.com'>
         <img src={email} width="40" height="40" alt='email'/>
         </a>
+        </div>
         </SectionWrapper>
 
   )

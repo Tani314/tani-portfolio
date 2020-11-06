@@ -16,7 +16,6 @@ export const Wrapper = styled.div`
 `;
 export const Title = styled.div`
   display: flex;
-  padding-top: 140px;
   padding-bottom: 5px;
   font-weight: bold;
   font-size: 43px;
