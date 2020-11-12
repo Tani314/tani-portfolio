@@ -15,32 +15,28 @@ h2 {
   text-decoration: underline;
 }
 .navbar {
-  align-items: center;
   background-color: #663399;
-  top: 0;
-  height: 10px;
+  height: 20px;
   padding: 10px;
   position: sticky;
   position: -webkit-sticky;
-}
-#nav-text {
-  width: 95%;
-  display: flex;
-  padding-left: 30px;
-  padding-right: 10px;
-  justify-content: space-between;
-  align-items: center;
+  top:0;
 }
 
-#wrapper {
-  min-height: 100%;
+.nav-text {
+  display: flex;
+  justify-content:space-between;
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 10px;
+  font-weight: bold
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 
 
 

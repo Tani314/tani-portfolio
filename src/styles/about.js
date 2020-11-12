@@ -16,6 +16,7 @@ export const Wrapper = styled.div`
 `;
 export const Title = styled.div`
   display: flex;
+  padding-top: 70px;
   padding-bottom: 5px;
   font-weight: bold;
   font-size: 43px;
@@ -34,7 +35,7 @@ export const HR = styled.hr`
   padding-bottom: 60px;
 `;
 export const Group = styled.div`
-  align-items: center;
+align-items: center;
 `;
 
 export const Heading = styled.div`
@@ -47,21 +48,27 @@ export const Heading = styled.div`
 
 export const Paragraph = styled.div`
   display: flex;
-  text-align: center;
+  text-align: justify;
   line-height: 1.6;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom:10px;
 `;
 export const Link = styled.div`
   color: purple;
   text-align: center;
+
 `;
 
 export const Image = styled.img`
   display: block;
+  float:left;
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
+  padding-left:70px;
   width: 200px;
   height: 260px;
 `;
-export const Display = styled.div``;
+
 //MINWIDTH

@@ -37,11 +37,60 @@ textarea{
 
 a {
   color: white;
+  padding: 10px;
   text-decoration: none;
 }
  .contact{
-   display:flex;
-  width:712px;
-  height: 207px;
+   display: flex;
   align-self: center;
+  padding-top: 100px
  }
+
+
+ .page{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20%;
+  align-items: center;
+  height: 100vh;
+  min-height : 100vh;
+  background-color: #0A0A29;
+ }
+
+ .contactTitle{
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 43px;
+  align-self: center;
+  color: white;
+ }
+
+ .contactHr{
+  display: block;
+  align-self: center;
+  height: 10px;
+  width: 80px;
+  border: 0;
+  border-top: 4px solid white;
+  margin: 0.5em 0;
+  padding: 0;
+  padding-bottom: 60px;
+ }
+
+ .triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 800px solid transparent;
+	border-right: 800px solid transparent;
+	border-top: 90px solid white;
+}
+
+
+.footer{
+  color: white;
+ padding: 50px;
+text-align: center;
+font-size:14px;
+}

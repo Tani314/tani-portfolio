@@ -1,26 +1,16 @@
-import React from 'react';
-import {Navbar,Home,About,Portfolio,Contact} from './components'
-import {HashRouter} from 'react-router-dom';
-
-
+import React from "react";
+import { Navbar, Home, About, Portfolio, Contact } from "./components";
 
 const App = () => {
   return (
-    <HashRouter>
-
-     <Navbar />
-
-    <Home/>
-    <About />
-     <Portfolio/>
-     <Contact/>
-
-
-    <footer>
-            Nuzhat Tabassum Tani <span>&copy;{new Date().getFullYear()}</span>
-          </footer>
-    </HashRouter>
-  )
-}
+    <>
+      <Home />
+      <Navbar />
+      <About />
+      <Portfolio />
+      <Contact />
+    </>
+  );
+};
 
 export default App;

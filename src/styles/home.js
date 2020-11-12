@@ -28,11 +28,10 @@ export const Button = styled.button`
 export const HomeText = styled.div`
 display: inline-block;
   position: absolute;
-  z-index: 999;
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 40%;
+  top: 50%;
   text-align: center;
   width: 60%;
   font-size: 40px;
