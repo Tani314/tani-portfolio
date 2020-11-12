@@ -16,8 +16,8 @@ import GraceShopper from "../assets/GraceShopper.jpg";
 import GetTested from "../assets/Get-Tested.jpg";
 import Exit from "../assets/Exit.jpg";
 
-import Modal from "./Modal";
-import OpenModalButton from "./ModalButton";
+import Modal from "./modal";
+import OpenModalButton from "./modalButton";
 import { ModalContent, Descrip } from "../styles/modal";
 
 const Portfolio = props => {
