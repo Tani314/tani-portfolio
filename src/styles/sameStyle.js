@@ -6,6 +6,4 @@ display: flex;
 flex-direction: column;
 padding-bottom: 30%;
 align-items: center;
-height: 60vh;
-
 `

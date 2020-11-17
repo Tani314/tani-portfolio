@@ -18,9 +18,7 @@ export const Wrapper = styled.div`
     mabvqa  x-width: 100%;
     align-items: center;
     padding: 0px;
-    & > div {
-      width: 100%;
-    }
+   
   }
 `;
 

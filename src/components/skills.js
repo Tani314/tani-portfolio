@@ -25,6 +25,7 @@ import '../styles/skills.css'
 
 const Skills = (props) => {
   return(
+    <div id='skills'> 
     <div className="all">
       <h3>Skills</h3>
       <div className="logo">
@@ -136,6 +137,7 @@ const Skills = (props) => {
       </div>
 
       </div>
+    </div>
     </div>
   )
 }

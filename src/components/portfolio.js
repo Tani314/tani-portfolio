@@ -29,6 +29,7 @@ const Portfolio = props => {
   }
 
   return (
+    <div id='portfolio'>
     <SectionWrapper>
       <Wrapper>
         <Title>Projects</Title>
@@ -120,6 +121,7 @@ const Portfolio = props => {
         </ImageColumn>
       </Wrapper>
     </SectionWrapper>
+    </div>
   );
 };
 export default Portfolio;

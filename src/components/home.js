@@ -7,6 +7,7 @@ import "../styles/home.css";
 
 const Home = props => {
   return (
+    <div id='home'>
     <SectionWrapper>
       <HomeWrapper>
         <CanvasWrapper>
@@ -71,6 +72,7 @@ const Home = props => {
         </CanvasWrapper>
       </HomeWrapper>
     </SectionWrapper>
+    </div>
   );
 };
 export default Home;

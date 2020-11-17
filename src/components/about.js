@@ -8,6 +8,7 @@ import { Wrapper,Title,Heading,Paragraph ,HR, Image,Group, Link} from '../styles
 const About = (props) => {
   return(
      //image
+     <div id='about'>
      <SectionWrapper >
        <Wrapper>
       <Title>ABOUT</Title>
@@ -28,6 +29,7 @@ const About = (props) => {
 
       </Wrapper>
     </SectionWrapper>
+    </div>
   )
 }
 export default About

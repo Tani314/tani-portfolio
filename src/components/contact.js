@@ -26,6 +26,7 @@ const Contact = props => {
   }
 
   return (
+    <div id='contact'>
     <div className="page" id="diamond-shield">
       <div class="triangle-up"></div>
       <div className="contactTitle">Contact</div>
@@ -54,6 +55,7 @@ const Contact = props => {
       <div className="footer">
         Nuzhat Tabassum Tani &#169;{new Date().getFullYear()}
       </div>
+    </div>
     </div>
   );
 };
