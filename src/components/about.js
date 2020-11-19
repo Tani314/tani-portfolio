@@ -18,10 +18,12 @@ const About = (props) => {
   <Image src={IMG_2877} />
     <Me>
       <Heading>Who am I?</Heading>
-      <Paragraph>I am a Full Stack Software Engineer based in Brooklyn, New York. I recently completed the immersive software engineering bootcamp at the Grace Hopper Program at Fullstack Academy. Currently, I am looking forward to  being part of a diverse, innovative and inspiring team that values creativity and social change.
+      <Paragraph>I am a Full Stack Software Engineer based in Brooklyn, New York. I recently completed the immersive software engineering bootcamp at the Grace Hopper Program at Fullstack Academy. Currently, I am looking forward to being part of a diverse, innovative and inspiring team that values creativity and social change.
       </Paragraph>
 
+<a href='#contact'>
       <Link>Lets work together</Link>
+      </a>
       </Me>
       </Group>
 
