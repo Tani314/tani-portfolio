@@ -67,7 +67,14 @@ const Home = props => {
               <p>I'm a full-stack web developer.</p>
             </div>
 
-            <Button>View my site &#8594;</Button>
+            <Button>
+              <a href='#about'>
+              <span>
+              View my site &#8594;
+              </span>
+              </a>
+
+              </Button>
           </HomeText>
         </CanvasWrapper>
       </HomeWrapper>
