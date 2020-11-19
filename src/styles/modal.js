@@ -2,29 +2,37 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const Overlay = styled(motion.div)`
-position: fixed;
-top: 0;
+display :block;
+position: fixed; /* Stay in place */
+z-index: 9999; /* Sit on top */
 left: 0;
-width: 100%;
-height: 100%;
-background-color: white;
+top: 0;
+width: 100vh;
+height: 100vh;/* Full height */
+padding-top: 100px;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.5s;
+  overflow: auto;
+  transition: all 0.3s linear;
+
+
 `;
 export const ModalContainer = styled(motion.div)`
-width: 50%;
-height: 50%;
-
-position: absolute;
-top: 50%;
+width: 100%;
+height: 100%;
+position: relative;
+top:50%;
 left: 50%;
 transform: translate(-50%, -50%);
-border-radius: 12px;
+z-index: 100;
 `;
-export const CloseButton = styled.svg`
-width: 10px;
-height: 10px;
-position: absolute;
-right: 5px;
 
+export const CloseButton = styled.svg`
+width: 15px;
+height: 15px;
+position: absolute;
+right: 10px;
 cursor: pointer;
 `;
 
@@ -38,15 +46,17 @@ background-color: transparent;
 
 
 export const ModalContent = styled.div`
-  height: 100%;
-  width: 100%;
-  align-items: center;
-display: flex;
-flex-wrap: wrap;
-padding : 10px;
-background-color: blue;
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border-radius: 4px;
+max-width: 300px;
+height: 450px;
 
 `;
 
 export const  Descrip = styled.div`
+font-family: "Montserrat", sans-serif;
+font-weight: 300;
+text-align: center;
 `

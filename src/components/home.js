@@ -13,7 +13,7 @@ const Home = props => {
         <CanvasWrapper>
           <QuickStartCanvas
             background="#0A0A29"
-            style={{ height: 135 + "vh" }}
+            style={{ height: 100 + "vh" }}
             onAnimate={(space, form, time, ftime) => {
               // create a line and get 200 interpolated points
               let offset = space.size.$multiply(0.2).y;

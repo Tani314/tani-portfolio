@@ -4,7 +4,7 @@ import {  AnimatePresence } from "framer-motion";
 
 const modalVariant = {
   initial: { opacity: 0 },
-  isOpen: { opacity: 1 },
+  isOpen: { opacity: 1},
   exit: { opacity: 0 }
   };
 const containerVariant = {
@@ -29,14 +29,14 @@ const Modal = ({ handleClose, children, isOpen }) => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20.39 20.39"
             >
-             
+
               <line
                 x1="19.39"
                 y1="19.39"
                 x2="1"
                 y2="1"
                 fill="none"
-                stroke="#5c3aff"
+                stroke="black"
                 strokeLinecap="round"
                 strokeMiterlimit="10"
                 strokeWidth="2"
@@ -47,7 +47,7 @@ const Modal = ({ handleClose, children, isOpen }) => {
                 x2="19.39"
                 y2="1"
                 fill="none"
-                stroke="#5c3aff"
+                stroke="black"
                 strokeLinecap="round"
                 strokeMiterlimit="10"
                 strokeWidth="2"

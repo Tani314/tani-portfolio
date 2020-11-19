@@ -25,7 +25,8 @@ import '../styles/skills.css'
 
 const Skills = (props) => {
   return(
-    <div id='skills'> 
+
+    <div id='skills'>
     <div className="all">
       <h3>Skills</h3>
       <div className="logo">
@@ -37,7 +38,8 @@ const Skills = (props) => {
 
       <div className="skill">
       <img src={Node} width="50" height="50" alt='Node'/>
-  <span className="skilltext">Node.Js</span>
+
+      <span className="skilltext">Node.Js</span>
       </div>
 
       <div className="skill">
@@ -46,7 +48,8 @@ const Skills = (props) => {
       </div>
 
       <div className="skill">
-      <img src={react} width="50" height="50" alt='react' />
+
+      <img src={react} width="50" height="50"  alt='react' />
       <span className="skilltext">React</span>
       </div>
 

@@ -33,10 +33,12 @@ export const HR = styled.hr`
   padding-bottom: 60px;
 `;
 export const ImageColumn = styled.div`
-padding-left: 90px;
+padding-left: 10%;
+padding-bottom: 10%;
 display: flex;
 flex-wrap: wrap;
 align-content: center;
+
 `
 export const Image = styled.img`
 opacity: 1;
@@ -45,6 +47,8 @@ opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
 `
+
+
 export const ImageMid =styled.div`
 transition: .5s ease;
   opacity: 0;
@@ -62,20 +66,24 @@ padding-bottom: 20px;
 
 export const Text = styled.div`
 background-color: transparent;
-  color: black;
-  border: 2px solid black;
-  font-size: 16px;
-  padding: 5px 10px;
+font-size: 16px;
+padding: 5px 10px;
+border: 2px solid black;
+color: black;
+width: 100px;
+
 `
 export const ImageContain = styled.div`
 position: relative;
   padding:10px;
+  z-index:1;
   &:hover {
     ${Image} {
       opacity: 0.3;
     }
     ${ImageMid} {
       opacity: 1;
+
     }
   }
   `

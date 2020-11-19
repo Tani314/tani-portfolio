@@ -2,7 +2,7 @@ import React from 'react';
 import Skills from './skills'
 import IMG_2877 from '../assets/IMG_2877.jpeg'
 import { SectionWrapper } from '../styles/sameStyle';
-import { Wrapper,Title,Heading,Paragraph ,HR, Image,Group, Link} from '../styles/about';
+import { Wrapper,Title,Heading,Paragraph ,HR, Image,Group, Link,Me} from '../styles/about';
 
 
 const About = (props) => {
@@ -16,12 +16,13 @@ const About = (props) => {
 
   <Group>
   <Image src={IMG_2877} />
+    <Me>
       <Heading>Who am I?</Heading>
       <Paragraph>I am a Full Stack Software Engineer based in Brooklyn, New York. I recently completed the immersive software engineering bootcamp at the Grace Hopper Program at Fullstack Academy. Currently, I am looking forward to  being part of a diverse, innovative and inspiring team that values creativity and social change.
       </Paragraph>
 
       <Link>Lets work together</Link>
-
+      </Me>
       </Group>
 
 
