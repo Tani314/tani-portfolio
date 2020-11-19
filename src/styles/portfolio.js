@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
     mabvqa  x-width: 100%;
     align-items: center;
     padding: 0px;
-   
+
   }
 `;
 
@@ -57,21 +57,22 @@ transition: .5s ease;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
+
 `
 export const ImgText= styled.div`
 font-weight:bold;
 text-align: center;
-padding-bottom: 20px;
+padding-bottom: 10px;
+background-color: white;
 `
 
 export const Text = styled.div`
 background-color: transparent;
 font-size: 16px;
-padding: 5px 10px;
+text-align:center;
 border: 2px solid black;
 color: black;
 width: 100px;
-
 `
 export const ImageContain = styled.div`
 position: relative;
@@ -87,6 +88,21 @@ position: relative;
     }
   }
   `
+export const Button = styled.button`
+color: black;
+  background-color: transparent;
+  font-size: 16px;
+  margin-top:5px;
+  margin-left:50px;
+  border: 2px solid black;
+&:hover {
+  background: #ec5ca4;
+}
+`
 
 
-
+export const ImgP = styled.div`
+display :flex;
+align-self: center;
+background-color: white;
+`

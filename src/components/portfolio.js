@@ -6,10 +6,11 @@ import {
   Title,
   Image,
   ImageMid,
-  Text,
+  Button,
   ImgText,
   ImageContain,
-  ImageColumn
+  ImageColumn,
+  ImgP
 } from "../styles/portfolio";
 import Pizza from "../assets/Pizza.jpg";
 import GraceShopper from "../assets/GraceShopper.jpg";
@@ -44,9 +45,9 @@ const Portfolio = props => {
             <Image src={Pizza} />
             <ImageMid>
               <ImgText>PizzaNow</ImgText>
-              <ImgText>Pizza NOW is web application that allows users to report domestic violence, disguised as a pizza delivery app</ImgText>
+              <ImgP>Pizza NOW is web application that allows users to report domestic violence, disguised as a pizza delivery app</ImgP>
               <a href="http://pizza-now.herokuapp.com/">
-                    <Text>View Site</Text>
+                    <Button>View Site</Button>
                   </a>
 
             </ImageMid>
@@ -56,10 +57,10 @@ const Portfolio = props => {
             <Image src={Exit} />
             <ImageMid>
               <ImgText>Exit</ImgText>
-              <ImgText>Exit is a virtual reality escape room game compatible with web, mobile and VR platforms that allows users to explore the room by enabling camera movement in 360 environment, search for and solve clues by interacting with the objects to escape the room.</ImgText>
+              <ImgP>Exit is an escape room game compatible with web, mobile and VR platforms that allows users to explore the room by enabling camera movement in 360 environment, search for and solve clues by interacting with the objects to escape the room.</ImgP>
 
               <a href="https://stormlooper.github.io/Exit/">
-                    <Text>View Site</Text>
+                    <Button>View Site</Button>
                   </a>
 
             </ImageMid>
@@ -69,9 +70,9 @@ const Portfolio = props => {
             <Image src={GraceShopper} />
             <ImageMid>
               <ImgText>GraceShopper</ImgText>
-              <ImgText>GraceShopper is an e-commerce website where guests and user can purchase groceries</ImgText>
+              <ImgP>GraceShopper is an e-commerce website where guests and user can purchase groceries</ImgP>
               <a href="https://graceshopper-captn-thunk.herokuapp.com/">
-                    <Text>View Site</Text>
+                    <Button>View Site</Button>
                   </a>
 
               {/* <OpenModalButton handleClick={() => handleOpenModal(true)}>
@@ -98,9 +99,9 @@ const Portfolio = props => {
             <Image src={Armor} />
             <ImageMid>
               <ImgText>Armor-Wing</ImgText>
-<ImgText>Native mobile app renders dragon in augmented reality and allows users to interact with the dragon to trigger animations.</ImgText>
+<ImgP>Native mobile app renders dragon in augmented reality and allows users to interact with the dragon to trigger animations.</ImgP>
 <a href="https://github.com/Tani314/Armor-Wing">
-                    <Text>View Site</Text>
+                    <Button>View Site</Button>
                   </a>
             </ImageMid>
           </ImageContain>
@@ -109,9 +110,9 @@ const Portfolio = props => {
             <Image src={GetTested} />
             <ImageMid>
               <ImgText>Get-Tested</ImgText>
-<ImgText>Get Tested COVID-19 is an open-source application which allows users to search for nearby Covid testing centers</ImgText>
+<ImgP>Get Tested COVID-19 is an open-source application which allows users to search for nearby Covid testing centers</ImgP>
 <a href="https://get-tested-covid19.org/">
-                    <Text>View Site</Text>
+                    <Button>View Site</Button>
                   </a>
             </ImageMid>
           </ImageContain>
