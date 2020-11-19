@@ -92,11 +92,11 @@ export const Button = styled.button`
 color: black;
   background-color: transparent;
   font-size: 16px;
-  margin-top:5px;
+  margin-top:8px;
   margin-left:50px;
   border: 2px solid black;
 &:hover {
-  background: #ec5ca4;
+  background: 	#BA55D3;
 }
 `
 
