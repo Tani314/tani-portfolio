@@ -21,6 +21,7 @@ padding-top:20px;
   margin: 5px;
   position: relative;
   float: left;
+
 }
 .skilltext {
   visibility: hidden;
@@ -47,6 +48,6 @@ padding-top:20px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  overflow: auto;
+
 }
 

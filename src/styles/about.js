@@ -2,20 +2,18 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  max-width: 70%;
   flex-direction: column;
+  max-width: 80%;
   @media (max-width: 1024px) {
     mabvqa  x-width: 100%;
     align-items: center;
-    padding: 0px;
     & > div {
       width: 100%;
     }
   }
 `;
 export const Title = styled.div`
-  display: flex;
+  display: block;
   padding-top: 70px;
   padding-bottom: 5px;
   font-weight: bold;
@@ -23,6 +21,7 @@ export const Title = styled.div`
   align-self: center;
   color: #444649;
 `;
+
 export const HR = styled.hr`
   display: block;
   align-self: center;
@@ -35,9 +34,14 @@ export const HR = styled.hr`
   padding-bottom: 60px;
 `;
 export const Group = styled.div`
-align-items: center;
+display: flex;
 `;
 
+export const Me = styled.div`
+display: flex;
+flex: 1 0 0%;
+flex-direction: column;
+`
 export const Heading = styled.div`
   text-align: center;
   padding: 15px;
@@ -61,7 +65,7 @@ export const Link = styled.div`
 `;
 
 export const Image = styled.img`
-  display: block;
+display:block;
   float:left;
   margin-left: auto;
   margin-right: auto;
