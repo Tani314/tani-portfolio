@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { SectionWrapper } from "../styles/sameStyle";
 import {
   Wrapper,
@@ -17,22 +17,8 @@ import GraceShopper from "../assets/GraceShopper.jpg";
 import GetTested from "../assets/Get-Tested.jpg";
 import Exit from "../assets/Exit.jpg";
 import Armor from "../assets/Armor.gif";
-import Modal from "./modal";
-import OpenModalButton from "./modalButton";
-import { ModalContent, Descrip } from "../styles/modal";
 
 const Portfolio = props => {
-  const [isOpen, toggle] = useState(false);
-
-  function handleOpenModal(open) {
-    console.log("close modal");
-    toggle(open);
-    setTimeout(function() {
-       ModalContent.style= {overflow: 'hidden'}
-       SectionWrapper.style= {display: 'none'}
-       ImageColumn.style= {opacity:'0'}
-    }, 100);
-  }
 
   return (
     <div id='portfolio'>
