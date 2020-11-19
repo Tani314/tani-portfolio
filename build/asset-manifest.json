@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.898a3045.chunk.css",
+    "main.js": "/static/js/main.a955f1f5.chunk.js",
+    "main.js.map": "/static/js/main.a955f1f5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9135dee9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9135dee9.js.map",
+    "static/js/2.d6b70270.chunk.js": "/static/js/2.d6b70270.chunk.js",
+    "static/js/2.d6b70270.chunk.js.map": "/static/js/2.d6b70270.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4fddff953701de597e2d1b21587d9311.js": "/precache-manifest.4fddff953701de597e2d1b21587d9311.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.898a3045.chunk.css.map": "/static/css/main.898a3045.chunk.css.map",
+    "static/js/2.d6b70270.chunk.js.LICENSE.txt": "/static/js/2.d6b70270.chunk.js.LICENSE.txt",
+    "static/media/Armor.gif": "/static/media/Armor.fc5d04eb.gif",
+    "static/media/Exit.jpg": "/static/media/Exit.d5d667bd.jpg",
+    "static/media/Get-Tested.jpg": "/static/media/Get-Tested.c42db85d.jpg",
+    "static/media/GraceShopper.jpg": "/static/media/GraceShopper.00221c29.jpg",
+    "static/media/IMG_2877.jpeg": "/static/media/IMG_2877.baf38dc1.jpeg",
+    "static/media/Pizza.jpg": "/static/media/Pizza.d39b2802.jpg",
+    "static/media/Postgres.png": "/static/media/Postgres.ea92d658.png",
+    "static/media/REST.png": "/static/media/REST.d6d2ebb6.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.68fcf38c.png",
+    "static/media/chai.png": "/static/media/chai.f6108efd.png",
+    "static/media/jasmine.png": "/static/media/jasmine.8316e471.png",
+    "static/media/react.svg": "/static/media/react.876a8325.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9135dee9.js",
+    "static/js/2.d6b70270.chunk.js",
+    "static/css/main.898a3045.chunk.css",
+    "static/js/main.a955f1f5.chunk.js"
+  ]
+}
