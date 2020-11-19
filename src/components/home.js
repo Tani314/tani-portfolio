@@ -64,7 +64,7 @@ const Home = props => {
 
             <div class="role">
               <div class="block2"></div>
-              <p>I'm a full-stack web developer.</p>
+              <p2>I'm a full-stack web developer.</p2>
             </div>
 
             <Button>
