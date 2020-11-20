@@ -58,7 +58,7 @@ const Home = props => {
               <div className="title">
                 <div className="block"></div>
                 <p1>
-                  Hello, I'm Nuzhat Tabassum Tani<span1></span1>
+                  <p3>Hello, I'm </p3>Nuzhat Tabassum Tani<span1></span1>
                 </p1>
               </div>
 

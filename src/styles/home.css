@@ -113,14 +113,14 @@ p2 {
   0% {
     width: 0px;
     height: 0px;
-    background: #ec5ca4;
+    background: #ddd;
     border: 0px solid #ddd;
     opacity: 0;
   }
   50% {
     width: 10px;
     height: 10px;
-    background: #ec5ca4;
+    background: white;
     opacity: 1;
     bottom: 45px;
   }
@@ -138,7 +138,7 @@ p2 {
   100% {
     width: 7px;
     height: 7px;
-    background: #ec5ca4;
+    background: white;
     border: 0px solid #222;
     bottom: 5px;
   }
@@ -186,4 +186,9 @@ p2 {
   p2 {
     font-size: 19px;
   }
+}
+
+
+p3{
+  color:white;
 }
