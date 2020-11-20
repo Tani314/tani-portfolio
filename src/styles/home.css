@@ -81,7 +81,7 @@ left: 0;
 
 }
 50% {
-width: 100%;
+width: 80%;
 left: 0;
 
 }
@@ -98,7 +98,7 @@ left: 0;
 
 }
 50% {
-width: 100%;
+width: 95%;
 left: 0;
 
 }
@@ -168,8 +168,8 @@ opacity: 1;
 .clickme{
   color: white;
   background-color: transparent;
-  font-size: 0.5em;
-  margin-left:50px;
+  font-size: 20px;
+  margin-left:90px;
   margin-right:10px;
   padding: 3px 8px;
   border: 2px solid white;
@@ -187,3 +187,16 @@ opacity: 1;
     background: #663399;
      }
 
+
+ @media only screen and (max-width: 768px) {
+   .clickme{
+     font-size:15px;
+     margin-left:50px;
+   }
+      p1 {
+       font-size:20px;
+      }
+    p2{
+        font-size:19px;
+    }
+    }

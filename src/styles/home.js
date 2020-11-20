@@ -24,5 +24,8 @@ display: inline-block;
   width: 60%;
   font-size: 40px;
   overflow:hidden;
+  @media (max-width: 768px) {
+    margin-left: 15%;
+  }
 `;
 

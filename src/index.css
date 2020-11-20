@@ -43,3 +43,9 @@ code {
 
 
 
+@media only screen and (max-width: 768px) {
+.nav-text{
+  padding-left:15px;
+}
+
+}

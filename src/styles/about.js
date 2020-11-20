@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
 display: flex;
 align-items: center;
 background-color: rgb(238, 235, 235);
-max-width: 100%;
+max-width: 90%;
 flex-direction: column;
 @media (max-width: 1024px) {
   mabvqa  x-width: 100%;
@@ -56,14 +56,17 @@ export const Heading = styled.div`
 export const Paragraph = styled.div`
   display: flex;
   line-height: 1.6;
-  padding-left: 50px;
+  padding-left: 30px;
   padding-right: 50px;
   padding-bottom:10px;
 `;
 export const Link = styled.div`
   color: purple;
   text-align: center;
-
+font-size: 20px;
+:hover{
+  color: #117611;
+}
 `;
 
 export const Image = styled.img`
@@ -71,7 +74,6 @@ display:block;
   float:left;
   margin-left: auto;
   margin-right: auto;
-  padding: 5px;
   padding-left:70px;
   width: 200px;
   height: 260px;
