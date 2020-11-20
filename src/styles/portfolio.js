@@ -86,6 +86,7 @@ background-color: #ddd;
 export const Button = styled.button`
 color: #363535;
 font-weight:bold;
+margin-left:80px;
   background-color: transparent;
   font-size: 20px;
   padding: 5px 11px;
