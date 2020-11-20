@@ -39,6 +39,9 @@ padding-bottom: 10%;
 display: flex;
 flex-wrap: wrap;
 align-content: center;
+@media (max-width: 768px) {
+  padding-left: 1%;
+}
 
 `
 export const Image = styled.img`
@@ -47,6 +50,10 @@ opacity: 1;
   height: 440px;
   transition: .5s ease;
   backface-visibility: hidden;
+  @media (max-width: 1200px) {
+    width: 400px;
+    height: 240px;
+  }
 `
 
 
