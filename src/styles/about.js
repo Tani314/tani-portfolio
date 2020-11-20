@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-display: flex;
-align-items: center;
-background-color: rgb(238, 235, 235);
-max-width: 90%;
-flex-direction: column;
-@media (max-width: 1024px) {
-  mabvqa  x-width: 100%;
+  display: flex;
   align-items: center;
-  padding: 0px;
-}
+  background-color: rgb(238, 235, 235);
+  max-width: 90%;
+  flex-direction: column;
+  @media (max-width: 1024px) {
+    mabvqax-width: 100%;
+    align-items: center;
+    padding: 0px;
+  }
 `;
 export const Title = styled.div`
   display: block;
@@ -33,18 +33,18 @@ export const HR = styled.hr`
   padding-bottom: 60px;
 `;
 export const Group = styled.div`
-display: flex;
-flex-wrap:wrap;
-@media (max-width: 768px) {
- flex-direction:column;
-}
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Me = styled.div`
-display: flex;
-flex: 1 0 0%;
-flex-direction: column;
-`
+  display: flex;
+  flex: 1 0 0%;
+  flex-direction: column;
+`;
 export const Heading = styled.div`
   text-align: center;
   padding: 15px;
@@ -58,28 +58,28 @@ export const Paragraph = styled.div`
   line-height: 1.6;
   padding-left: 30px;
   padding-right: 50px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 `;
 export const Link = styled.div`
   color: purple;
   text-align: center;
-font-size: 20px;
-:hover{
-  color: #117611;
-}
+  font-size: 20px;
+  :hover {
+    color: #117611;
+  }
 `;
 
 export const Image = styled.img`
-display:block;
-  float:left;
+  display: block;
+  float: left;
   margin-left: auto;
   margin-right: auto;
-  padding-left:70px;
+  padding-left: 70px;
   width: 200px;
   height: 260px;
   @media (max-width: 768px) {
-    padding:0px;
-   }
+    padding: 0px;
+  }
 `;
 
 //MINWIDTH

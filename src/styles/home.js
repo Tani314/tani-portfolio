@@ -13,19 +13,18 @@ export const CanvasWrapper = styled.div`
 `;
 
 export const HomeText = styled.div`
-display: inline-block;
+  display: inline-block;
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
   top: 40%;
-  align-content:center;
+  align-content: center;
   text-align: center;
   width: 60%;
   font-size: 40px;
-  overflow:hidden;
+  overflow: hidden;
   @media (max-width: 768px) {
     margin-left: 15%;
   }
 `;
-

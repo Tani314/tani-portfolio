@@ -26,42 +26,40 @@ const Contact = props => {
   }
 
   return (
-    <div id='contact'>
-    <div className="page" >
-      <div class="triangle-up"></div>
-      <div className="contactTitle">Contact</div>
-      <hr className="contactHr" />
-   <div className='line'>Have any question or want to work with me?</div>
+    <div id="contact">
+      <div className="page">
+        <div class="triangle-up"></div>
+        <div className="contactTitle">Contact</div>
+        <hr className="contactHr" />
+        <div className="line">Have any question or want to work with me?</div>
 
-   <div className='formdesign'>
+        <div className="formdesign">
+          <form onSubmit={sendEmail}>
+            <input placeholder="Name" type="text" name="name" required />
 
-      <form onSubmit={sendEmail}>
-        <input placeholder="Name" type="text" name="name" required />
+            <input placeholder="Email" type="email" name="email" required />
 
-        <input placeholder="Email" type="email" name="email" required />
+            <textarea placeholder="Your Message" type="text" name="message" />
 
-        <textarea placeholder="Your Message" type="text" name="message" />
+            <input type="submit" value="Send" />
+          </form>
+        </div>
 
-        <input type="submit" value="Send" />
-      </form>
-
-</div>
-
-      <div className="contact1">
-        <a href="https://www.linkedin.com/in/tani314/">
-          <img src={LinkedIn} width="60" height="60" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/Tani314">
-          <img src={github} width="60" height="60" alt="github" />
-        </a>
-        <a href="mailto: tanitabassum299@gmail.com">
-          <img src={email} width="60" height="60" alt="email" />
-        </a>
+        <div className="contact1">
+          <a href="https://www.linkedin.com/in/tani314/">
+            <img src={LinkedIn} width="60" height="60" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/Tani314">
+            <img src={github} width="60" height="60" alt="github" />
+          </a>
+          <a href="mailto: tanitabassum299@gmail.com">
+            <img src={email} width="60" height="60" alt="email" />
+          </a>
+        </div>
+        <div className="footer">
+          Nuzhat Tabassum Tani &#169;{new Date().getFullYear()}
+        </div>
       </div>
-      <div className="footer">
-        Nuzhat Tabassum Tani &#169;{new Date().getFullYear()}
-      </div>
-    </div>
     </div>
   );
 };

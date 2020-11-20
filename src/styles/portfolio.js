@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   max-width: 100%;
   flex-direction: column;
   @media (max-width: 1024px) {
-    mabvqa  x-width: 100%;
+    mabvqax-width: 100%;
     align-items: center;
     padding: 0px;
   }
@@ -33,35 +33,33 @@ export const HR = styled.hr`
   padding-bottom: 60px;
 `;
 export const ImageColumn = styled.div`
-padding-left: 10%;
-padding-bottom: 10%;
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-@media (max-width: 768px) {
-  padding-left: 1%;
-}
-
-`
+  padding-left: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  @media (max-width: 768px) {
+    padding-left: 1%;
+  }
+`;
 export const Image = styled.img`
-opacity: 1;
+  opacity: 1;
   width: 600px;
   height: 440px;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
   @media (max-width: 1400px) {
     width: 500px;
     height: 340px;
   }
-  @media(max-width: 768px) {
+  @media (max-width: 1200px) {
     width: 400px;
     height: 240px;
   }
-`
+`;
 
-
-export const ImageMid =styled.div`
-transition: .5s ease;
+export const ImageMid = styled.div`
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -69,24 +67,23 @@ transition: .5s ease;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   width: 80%;
-
-`
-export const ImgText= styled.div`
-font-weight:bold;
-color: #363535;
-text-align: center;
-padding-bottom: 10px;
-font-size: 25px;
-@media (max-width: 1400px) {
-  font-size: 20px;
-}
-`
+`;
+export const ImgText = styled.div`
+  font-weight: bold;
+  color: #363535;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 25px;
+  @media (max-width: 1400px) {
+    font-size: 20px;
+  }
+`;
 
 export const ImageContain = styled.div`
-position: relative;
-background-color: #ddd;
-  padding:2px;
-  z-index:1;
+  position: relative;
+  background-color: #ddd;
+  padding: 2px;
+  z-index: 1;
   &:hover {
     ${Image} {
       opacity: 0;
@@ -94,36 +91,33 @@ background-color: #ddd;
     ${ImageMid} {
       opacity: 1;
     }
-
   }
-  `
+`;
 export const Button = styled.button`
-color: #363535;
-font-weight:bold;
-margin-left: 35%;
+  color: #363535;
+  font-weight: bold;
+  margin-left: 35%;
   background-color: transparent;
   font-size: 20px;
   padding: 5px 11px;
-  margin-top:20px;
-  border: 3px solid #B018B0;
-&:hover {
-  background:#B018B0;
-  color:white;
-}
-@media (max-width: 1400px) {
-  font-size: 15px;
-  padding: 3px 9px;
-  margin-left: 35%;
-}
-@media (max-width: 768px) {
-  margin-left: 30%;
-}
-`
-
+  margin-top: 20px;
+  border: 3px solid #b018b0;
+  &:hover {
+    background: #b018b0;
+    color: white;
+  }
+  @media (max-width: 1400px) {
+    font-size: 15px;
+    padding: 3px 9px;
+    margin-left: 35%;
+  }
+  @media (max-width: 768px) {
+    margin-left: 30%;
+  }
+`;
 
 export const ImgP = styled.div`
-display :flex;
-align-self: center;
-color: #363535;
-`
-
+  display: flex;
+  align-self: center;
+  color: #363535;
+`;

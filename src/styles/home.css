@@ -5,44 +5,42 @@
   align-items: center;
   height: 80%;
   margin-left: 27%;
-
 }
-  .block {
-    width: -10%;
-    height: inherit;
-    background: rgb(238, 235, 235);
-    position: absolute;
-    animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-    display: flex;
-  }
+.block {
+  width: -10%;
+  height: inherit;
+  background: rgb(238, 235, 235);
+  position: absolute;
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  display: flex;
+}
 
-  p1{
-    color: #ec5ca4;
-    font-size: 29px;
-    font-weight:bold;
-    -webkit-animation: mainFadeIn 2s forwards;
-    -o-animation: mainFadeIn 2s forwards;
-    animation: mainFadeIn 2s forwards;
-    animation-delay: 1.6s;
-    opacity: 0;
-    position: relative;
-  }
-    span1 {
-      width:0px;
-      height: 0px;
-      -webkit-border-radius: 60%;
-      -moz-border-radius: 60%;
-      border-radius: 60%;
-      background:#ec5ca4;
-      -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
-      animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
-      animation-delay: 2s;
-      margin-left: 3px;
-      margin-top: -10px;
-      position: absolute;
-      bottom: 13px;
-
-    }
+p1 {
+  color: #ec5ca4;
+  font-size: 29px;
+  font-weight: bold;
+  -webkit-animation: mainFadeIn 2s forwards;
+  -o-animation: mainFadeIn 2s forwards;
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 1.6s;
+  opacity: 0;
+  position: relative;
+}
+span1 {
+  width: 0px;
+  height: 0px;
+  -webkit-border-radius: 60%;
+  -moz-border-radius: 60%;
+  border-radius: 60%;
+  background: #ec5ca4;
+  -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 2s;
+  margin-left: 3px;
+  margin-top: -10px;
+  position: absolute;
+  bottom: 13px;
+}
 
 .role {
   width: 70%;
@@ -52,151 +50,140 @@
   height: 80%;
   margin-top: 5px;
   margin-left: 27%;
-
 }
- .block2 {
-    width: 0%;
-    height: inherit;
-    background: #ec5ca4;
-    position: absolute;
-    animation: secBlock 3s cubic-bezier(.74, .06, .4, .92) forwards;
-    animation-delay: 2s;
-    display: flex;
-  }
+.block2 {
+  width: 0%;
+  height: inherit;
+  background: #ec5ca4;
+  position: absolute;
+  animation: secBlock 3s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 2s;
+  display: flex;
+}
 
-  p2 {
-    animation: secFadeIn 2s forwards;
-    animation-delay: 3.2s;
-    opacity: 0;
-    color: #fff;
-    font-size: 29px;
-    font-weight:bold;
-  }
-
+p2 {
+  animation: secFadeIn 2s forwards;
+  animation-delay: 3.2s;
+  opacity: 0;
+  color: #fff;
+  font-size: 29px;
+  font-weight: bold;
+}
 
 @keyframes mainBlock {
-0% {
-width: 0%;
-left: 0;
-
-}
-50% {
-width: 80%;
-left: 0;
-
-}
-100% {
-width: 0;
-left: 100%;
-}
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 80%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
 }
 
 @keyframes secBlock {
-0% {
-width: 0%;
-left: 0;
-
-}
-50% {
-width: 95%;
-left: 0;
-
-}
-100% {
-width: 0;
-left: 100%;
-}
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 95%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
 }
 
 @keyframes mainFadeIn {
-0% {
-opacity: 0;
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-100% {
-opacity: 1;
-}
-}
-
 
 @keyframes popIn {
-0% {
-width: 0px;
-height: 0px;
-background: #ec5ca4;
-border: 0px solid #ddd;
-opacity: 0;
-}
-50% {
-width: 10px;
-height: 10px;
-background: #ec5ca4;
-opacity: 1;
-bottom: 45px;
-}
-65% {
-  width: 7px;
-height: 7px;
-  bottom: 0px;
-  width: 15px
-}
-80% {
-  width: 10px;
-height: 10px;
-  bottom: 20px
-}
-100% {
-width: 7px;
-height: 7px;
-background: #ec5ca4;
-border: 0px solid #222;
-bottom: 5px;
-
-}
+  0% {
+    width: 0px;
+    height: 0px;
+    background: #ec5ca4;
+    border: 0px solid #ddd;
+    opacity: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    background: #ec5ca4;
+    opacity: 1;
+    bottom: 45px;
+  }
+  65% {
+    width: 7px;
+    height: 7px;
+    bottom: 0px;
+    width: 15px;
+  }
+  80% {
+    width: 10px;
+    height: 10px;
+    bottom: 20px;
+  }
+  100% {
+    width: 7px;
+    height: 7px;
+    background: #ec5ca4;
+    border: 0px solid #222;
+    bottom: 5px;
+  }
 }
 
 @keyframes secFadeIn {
-0% {
-opacity: 0;
-}
-100% {
-opacity: 1;
-}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-
-
-.clickme{
+.clickme {
   color: white;
   background-color: transparent;
   font-size: 20px;
-  margin-left:90px;
-  margin-right:10px;
+  margin-left: 90px;
+  margin-right: 10px;
   padding: 3px 8px;
   border: 2px solid white;
   border-radius: 3px;
 }
-  .clickme:hover span {
-    display:none
+.clickme:hover span {
+  display: none;
+}
+
+.clickme:hover:before {
+  content: "View my site \2193";
+}
+
+.clickme:hover {
+  background: #663399;
+}
+
+@media only screen and (max-width: 768px) {
+  .clickme {
+    font-size: 15px;
+    margin-left: 50px;
   }
-
-  .clickme:hover:before {
-    content:"View my site \2193";
+  p1 {
+    font-size: 20px;
   }
-
-  .clickme:hover {
-    background: #663399;
-     }
-
-
- @media only screen and (max-width: 768px) {
-   .clickme{
-     font-size:15px;
-     margin-left:50px;
-   }
-      p1 {
-       font-size:20px;
-      }
-    p2{
-        font-size:19px;
-    }
-    }
+  p2 {
+    font-size: 19px;
+  }
+}
