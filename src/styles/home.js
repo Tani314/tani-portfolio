@@ -13,25 +13,6 @@ export const CanvasWrapper = styled.div`
 
 `;
 
-export const Button = styled.button`
-  color: white;
-  background-color: transparent;
-  font-size: 0.5em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid white;
-  border-radius: 3px;
-  &:hover span {
-    display:none
-  }
-
-  &:hover:before {
-    content:"View my site \u2193";
-  }
-
-  &:hover { background: #663399;
-     }
-`;
 
 export const HomeText = styled.div`
 display: inline-block;

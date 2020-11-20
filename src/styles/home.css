@@ -175,3 +175,23 @@ opacity: 1;
 
 
 
+.clickme{
+  color: white;
+  background-color: transparent;
+  font-size: 0.5em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+  .clickme:hover span {
+    display:none
+  }
+
+  .clickme:hover:before {
+    content:"View my site \2193";
+  }
+
+  .clickme:hover { background: #663399;
+     }
+

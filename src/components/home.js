@@ -1,6 +1,6 @@
 import React from "react";
 import { SectionWrapper } from "../styles/sameStyle";
-import { CanvasWrapper, HomeWrapper, HomeText, Button } from "../styles/home";
+import { CanvasWrapper, HomeWrapper, HomeText } from "../styles/home";
 import { Geom, Pt, Line, Const, Group, Num } from "pts/dist/es5";
 import { QuickStartCanvas } from "react-pts-canvas";
 import "../styles/home.css";
@@ -64,17 +64,17 @@ const Home = props => {
 
             <div class="role">
               <div class="block2"></div>
-              <p2>I'm a full-stack web developer.</p2>
+              <p2>I'm a Full-Stack Software Engineer.</p2>
             </div>
 
-            <Button>
-              <a href='#about'>
+
+              <a href='#about' class='clickme'>
               <span>
               View my site &#8594;
               </span>
               </a>
 
-              </Button>
+
           </HomeText>
         </CanvasWrapper>
       </HomeWrapper>
