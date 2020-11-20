@@ -97,7 +97,7 @@ margin-left:80px;
   background-color: transparent;
   font-size: 20px;
   padding: 5px 11px;
-  margin-top:15px;
+  margin-top:20px;
   border: 3px solid #B018B0;
 &:hover {
   background:#B018B0;
