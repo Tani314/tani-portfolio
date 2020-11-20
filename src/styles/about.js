@@ -52,10 +52,12 @@ export const Heading = styled.div`
   font-weight: bold;
   font-size: 25px;
   color: #444649;
+  font-family: "HelveticaNeue-Light";
 `;
 
 export const Paragraph = styled.div`
   display: flex;
+  font-family: "HelveticaNeue-Light";
   line-height: 1.6;
   padding-left: 30px;
   padding-right: 50px;
@@ -65,6 +67,8 @@ export const Link = styled.div`
   color: purple;
   text-align: center;
   font-size: 20px;
+
+  font-family: "HelveticaNeue-Light";
   :hover {
     color: #117611;
   }

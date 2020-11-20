@@ -17,6 +17,7 @@
 
 p1 {
   color: #ec5ca4;
+  font-family: "HelveticaNeue-Light";
   font-size: 29px;
   font-weight: bold;
   -webkit-animation: mainFadeIn 2s forwards;
@@ -68,6 +69,7 @@ p2 {
   color: #fff;
   font-size: 29px;
   font-weight: bold;
+  font-family: "HelveticaNeue-Light";
 }
 
 @keyframes mainBlock {

@@ -70,6 +70,7 @@ export const ImageMid = styled.div`
 `;
 export const ImgText = styled.div`
   font-weight: bold;
+  font-family: "HelveticaNeue-Light";
   color: #363535;
   text-align: center;
   padding-bottom: 10px;
@@ -97,6 +98,7 @@ export const Button = styled.button`
   color: #363535;
   font-weight: bold;
   margin-left: 35%;
+  font-family: "HelveticaNeue-Light";
   background-color: transparent;
   font-size: 20px;
   padding: 5px 11px;
@@ -120,4 +122,5 @@ export const ImgP = styled.div`
   display: flex;
   align-self: center;
   color: #363535;
+  font-family: "HelveticaNeue-Light";
 `;
