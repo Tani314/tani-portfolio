@@ -30,11 +30,14 @@ export const HR = styled.hr`
   border: 0;
   border-top: 4px solid #444649;
   margin: 0.5em 0;
-  padding: 0;
   padding-bottom: 60px;
 `;
 export const Group = styled.div`
 display: flex;
+flex-wrap:wrap;
+@media (max-width: 768px) {
+ flex-direction:column;
+}
 `;
 
 export const Me = styled.div`
@@ -52,7 +55,6 @@ export const Heading = styled.div`
 
 export const Paragraph = styled.div`
   display: flex;
-  text-align: justify;
   line-height: 1.6;
   padding-left: 50px;
   padding-right: 50px;
@@ -73,6 +75,9 @@ display:block;
   padding-left:70px;
   width: 200px;
   height: 260px;
+  @media (max-width: 768px) {
+    padding:0px;
+   }
 `;
 
 //MINWIDTH
