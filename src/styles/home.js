@@ -19,6 +19,7 @@ display: inline-block;
   left: 0;
   right: 0;
   top: 40%;
+  align-content:center;
   text-align: center;
   width: 60%;
   font-size: 40px;
