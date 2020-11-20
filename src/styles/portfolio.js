@@ -12,7 +12,7 @@ export const Title = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  background-color: rgb(238, 235, 235);
+  background-color: #f5f5f5;;
   max-width: 100%;
   flex-direction: column;
   @media (max-width: 1024px) {

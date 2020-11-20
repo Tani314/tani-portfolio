@@ -5,5 +5,5 @@ export const SectionWrapper = styled.div`
   flex-direction: column;
   flex: 1 0 0%;
   align-items: center;
-  background-color: rgb(238, 235, 235);
+  background-color: #f5f5f5;
 `;
