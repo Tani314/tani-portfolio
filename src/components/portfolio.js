@@ -41,6 +41,7 @@ const Portfolio = props => {
 
           <ImageContain>
             <Image src={Exit} />
+
             <ImageMid>
               <ImgText>Exit</ImgText>
               <ImgP>Exit is an escape room game compatible with web, mobile and VR platforms that allows users to explore the room by enabling camera movement in 360 environment, search for and solve clues by interacting with the objects to escape the room.</ImgP>
@@ -50,33 +51,18 @@ const Portfolio = props => {
                   </a>
 
             </ImageMid>
+
           </ImageContain>
 
           <ImageContain>
             <Image src={GraceShopper} />
             <ImageMid>
+
               <ImgText>GraceShopper</ImgText>
               <ImgP>GraceShopper is an e-commerce website where guests and user can purchase groceries</ImgP>
               <a href="https://graceshopper-captn-thunk.herokuapp.com/">
                     <Button>View Site</Button>
                   </a>
-
-              {/* <OpenModalButton handleClick={() => handleOpenModal(true)}>
-                Learn More
-              </OpenModalButton>
-
-              <Descrip>
-              <Modal isOpen={isOpen} handleClose={() => handleOpenModal(false)}>
-                <ModalContent>
-                  <h3> GraceShopper </h3>
-
-                <p>GraceShopper is an e-commerce website where guests and user can purchase groceries</p>
-                  <a href="https://graceshopper-captn-thunk.herokuapp.com/">
-                    <Text>View Site</Text>
-                  </a>
-                </ModalContent>
-              </Modal>
-              </Descrip> */}
 
             </ImageMid>
           </ImageContain>

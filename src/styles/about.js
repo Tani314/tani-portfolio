@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 80%;
-  @media (max-width: 1024px) {
-    mabvqa  x-width: 100%;
-    align-items: center;
-    & > div {
-      width: 100%;
-    }
-  }
+display: flex;
+align-items: center;
+background-color: rgb(238, 235, 235);
+max-width: 100%;
+flex-direction: column;
+@media (max-width: 1024px) {
+  mabvqa  x-width: 100%;
+  align-items: center;
+  padding: 0px;
+}
 `;
 export const Title = styled.div`
   display: block;
