@@ -1,14 +1,17 @@
 .all {
   align-items: center;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 50px;
+  padding-right:20px;
 }
+
+
 h3 {
   text-align: center;
   color: #444649;
   font-weight: bold;
   font-size: 30px;
-  padding-top: 20px;
 }
 
 .skill {
@@ -45,4 +48,16 @@ h3 {
   height: 100%;
   margin-left: 10%;
   margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .all {
+    max-width:100%;
+    padding-left:40px;
+    padding-right:0px;
+  }
+.logo{
+  margin-left: 15%;
+  margin-right: 0;
+}
 }

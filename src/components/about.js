@@ -11,7 +11,8 @@ import {
   Image,
   Group,
   Link,
-  Me
+  Me,
+  MainGroup
 } from "../styles/about";
 
 const About = props => {
@@ -23,9 +24,9 @@ const About = props => {
           <Title>ABOUT</Title>
           <HR />
 
+<MainGroup>
           <Group>
             <Image src={IMG_2877} />
-            <Me>
               <Heading>Who am I?</Heading>
               <Paragraph>
                 I am a Full Stack Software Engineer based in Brooklyn, New York.
@@ -34,14 +35,13 @@ const About = props => {
                 am looking forward to being part of a diverse, innovative and
                 inspiring team that values creativity and social change.
               </Paragraph>
-
               <a href="#contact">
-                <Link>Lets work together</Link>
+                <Link>Let's work together</Link>
               </a>
-            </Me>
-          </Group>
+            </Group>
 
           <Skills />
+          </MainGroup>
         </Wrapper>
       </SectionWrapper>
     </div>

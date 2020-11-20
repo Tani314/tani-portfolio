@@ -38,8 +38,11 @@ export const ImageColumn = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  @media (max-width: 1200px) {
+    padding-left: 25%;
+  }
   @media (max-width: 768px) {
-    padding-left: 1%;
+    padding-left: 10%;
   }
 `;
 export const Image = styled.img`
@@ -55,6 +58,10 @@ export const Image = styled.img`
   @media (max-width: 1200px) {
     width: 400px;
     height: 240px;
+  }
+  @media (max-width: 768px) {
+    width: 350px;
+    height: 190px;
   }
 `;
 

@@ -4,11 +4,11 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   background-color: white;
-  max-width: 90%;
-  margin-top:5%;
+margin:10%;
+padding-bottom: 50px;
   flex-direction: column;
   @media (max-width: 1024px) {
-    mabvqax-width: 100%;
+
     align-items: center;
     padding: 0px;
   }
@@ -35,16 +35,24 @@ export const HR = styled.hr`
 `;
 export const Group = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  @media (max-width: 768px) {
-    flex-direction: column;
+  flex-direction: column;
+  max-width:50%;
+  padding-left:40px;
+  padding-bottom: 60px;
+  @media (max-width: 1200px) {
+    max-width:100%;
+    padding-bottom: 5px;
   }
 `;
 
-export const Me = styled.div`
-  display: flex;
+
+export const MainGroup= styled.div`
+display: flex;
+  flex-direction: row;
   flex: 1 0 0%;
-  flex-direction: column;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 export const Heading = styled.div`
   text-align: center;
@@ -67,7 +75,6 @@ export const Link = styled.div`
   color: purple;
   text-align: center;
   font-size: 20px;
-
   font-family: "HelveticaNeue-Light";
   :hover {
     color: #117611;
@@ -79,7 +86,6 @@ export const Image = styled.img`
   float: left;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 70px;
   width: 200px;
   height: 260px;
   @media (max-width: 768px) {
