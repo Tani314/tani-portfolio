@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  background-color: rgb(238, 235, 235);
+  background-color: white;
   max-width: 90%;
+  margin-top:5%;
   flex-direction: column;
   @media (max-width: 1024px) {
     mabvqax-width: 100%;
