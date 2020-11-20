@@ -50,7 +50,7 @@ opacity: 1;
   height: 440px;
   transition: .5s ease;
   backface-visibility: hidden;
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     width: 400px;
     height: 240px;
   }
