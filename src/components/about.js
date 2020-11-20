@@ -11,7 +11,6 @@ import {
   Image,
   Group,
   Link,
-  Me,
   MainGroup
 } from "../styles/about";
 
