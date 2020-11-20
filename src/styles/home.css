@@ -3,12 +3,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 30px;
+  height: 80%;
   margin-left: 27%;
 
 }
   .block {
-    width: 0%;
+    width: -10%;
     height: inherit;
     background: #fff;
     position: absolute;
@@ -37,11 +37,11 @@
       -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
       animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
       animation-delay: 2s;
-      margin-left: 5px;
+      margin-left: 3px;
       margin-top: -10px;
       position: absolute;
       bottom: 13px;
-      right: -12px;
+
     }
 
 
@@ -52,7 +52,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 30px;
+  height: 80%;
   margin-top: 5px;
   margin-left: 27%;
 
@@ -75,12 +75,6 @@
     font-size: 29px;
     font-weight:bold;
   }
-
-
-
-
-
-
 
 
 @keyframes mainBlock {
@@ -178,8 +172,8 @@ opacity: 1;
   color: white;
   background-color: transparent;
   font-size: 0.5em;
-  margin: 1em;
-  padding: 0.25em 1em;
+
+  padding: 2px 10px;
   border: 2px solid white;
   border-radius: 3px;
 }
@@ -191,6 +185,7 @@ opacity: 1;
     content:"View my site \2193";
   }
 
-  .clickme:hover { background: #663399;
+  .clickme:hover {
+    background: #663399;
      }
 

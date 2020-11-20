@@ -10,9 +10,9 @@ export const CanvasWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-
 `;
 
+export const HomeFlex= styled.div``
 
 export const HomeText = styled.div`
 display: inline-block;
@@ -20,9 +20,10 @@ display: inline-block;
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 40%;
   text-align: center;
   width: 60%;
   font-size: 40px;
+  overflow:hidden;
 `;
 
