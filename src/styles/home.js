@@ -12,8 +12,6 @@ export const CanvasWrapper = styled.div`
   height: 100%;
 `;
 
-export const HomeFlex= styled.div``
-
 export const HomeText = styled.div`
 display: inline-block;
   position: absolute;
