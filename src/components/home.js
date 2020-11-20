@@ -56,7 +56,7 @@ const Home = props => {
 
           <HomeText>
             <div class="title">
-              <span1 class="block"></span1>
+              <div class="block"></div>
               <p1>
                 Hello, I'm Nuzhat Tabassum Tani<span1></span1>
               </p1>
@@ -73,7 +73,6 @@ const Home = props => {
               View my site &#8594;
               </span>
               </a>
-
 
           </HomeText>
         </CanvasWrapper>

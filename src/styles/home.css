@@ -3,14 +3,14 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 50px;
-  margin-left: 25%;
+  height: 30px;
+  margin-left: 27%;
 
 }
   .block {
     width: 0%;
     height: inherit;
-    background:#ec5ca4;
+    background: #fff;
     position: absolute;
     animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
     display: flex;
@@ -42,7 +42,6 @@
       position: absolute;
       bottom: 13px;
       right: -12px;
-
     }
 
 
