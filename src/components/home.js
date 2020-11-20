@@ -55,20 +55,20 @@ const Home = props => {
           />
 
           <HomeText>
-            <div class="title">
-              <div class="block"></div>
+            <div className="title">
+              <div className="block"></div>
               <p1>
                 Hello, I'm Nuzhat Tabassum Tani<span1></span1>
               </p1>
             </div>
 
-            <div class="role">
-              <div class="block2"></div>
+            <div className="role">
+              <div className="block2"></div>
               <p2>I'm a Full-Stack Software Engineer.</p2>
             </div>
 
 
-              <a href='#about' class='clickme'>
+              <a href='#about' className='clickme'>
               <span>
               View my site &#8594;
               </span>

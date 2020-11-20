@@ -12,7 +12,8 @@ export const Title = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  max-width: 70%;
+  background-color: rgb(238, 235, 235);
+  max-width: 100%;
   flex-direction: column;
   @media (max-width: 1024px) {
     mabvqa  x-width: 100%;
@@ -42,8 +43,8 @@ align-content: center;
 `
 export const Image = styled.img`
 opacity: 1;
-  width: 400px;
-  height: 250px;
+  width: 600px;
+  height: 440px;
   transition: .5s ease;
   backface-visibility: hidden;
 `
@@ -61,26 +62,20 @@ transition: .5s ease;
 `
 export const ImgText= styled.div`
 font-weight:bold;
+color: #363535;
 text-align: center;
 padding-bottom: 10px;
-background-color: white;
+font-size: 25px;
 `
 
-export const Text = styled.div`
-background-color: transparent;
-font-size: 16px;
-text-align:center;
-border: 2px solid black;
-color: black;
-width: 100px;
-`
 export const ImageContain = styled.div`
 position: relative;
-  padding:10px;
+background-color: #ddd;
+  padding:2px;
   z-index:1;
   &:hover {
     ${Image} {
-      opacity: 0.3;
+      opacity: 0;
     }
     ${ImageMid} {
       opacity: 1;
@@ -89,14 +84,16 @@ position: relative;
   }
   `
 export const Button = styled.button`
-color: black;
+color: #363535;
+font-weight:bold;
   background-color: transparent;
-  font-size: 16px;
-  margin-top:8px;
-  margin-left:50px;
-  border: 2px solid black;
+  font-size: 20px;
+  padding: 5px 11px;
+  margin-top:15px;
+  border: 3px solid #B018B0;
 &:hover {
-  background: 	#BA55D3;
+  background:#B018B0;
+  color:white;
 }
 `
 
@@ -104,5 +101,5 @@ color: black;
 export const ImgP = styled.div`
 display :flex;
 align-self: center;
-background-color: white;
+color: #363535;
 `

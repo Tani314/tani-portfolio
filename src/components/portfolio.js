@@ -21,7 +21,7 @@ import Armor from "../assets/Armor.gif";
 const Portfolio = props => {
 
   return (
-    <div id='portfolio'>
+    <div id='portfolio' >
     <SectionWrapper>
       <Wrapper>
         <Title>Projects</Title>

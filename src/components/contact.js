@@ -27,11 +27,14 @@ const Contact = props => {
 
   return (
     <div id='contact'>
-    <div className="page" id="diamond-shield">
+    <div className="page" >
       <div class="triangle-up"></div>
       <div className="contactTitle">Contact</div>
       <hr className="contactHr" />
-      Have any question or want to work with me?
+   <div className='line'>Have any question or want to work with me?</div>
+
+   <div className='formdesign'>
+
       <form onSubmit={sendEmail}>
         <input placeholder="Name" type="text" name="name" required />
 
@@ -41,7 +44,10 @@ const Contact = props => {
 
         <input type="submit" value="Send" />
       </form>
-      <div className="contact">
+
+</div>
+
+      <div className="contact1">
         <a href="https://www.linkedin.com/in/tani314/">
           <img src={LinkedIn} width="60" height="60" alt="LinkedIn" />
         </a>
