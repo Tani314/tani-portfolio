@@ -29,7 +29,7 @@ const About = props => {
               <Heading>Who am I?</Heading>
               <Paragraph>
                 I am a Full Stack Software Engineer based in Brooklyn, New York.
-                I recently completed the immersive software engineering bootcamp
+                I recently completed the Immersive Software Engineering Bootcamp
                 at the Grace Hopper Program at Fullstack Academy. Currently, I
                 am looking forward to being part of a diverse, innovative and
                 inspiring team that values creativity and social change.
