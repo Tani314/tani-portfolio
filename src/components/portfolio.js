@@ -34,7 +34,7 @@ const Portfolio = props => {
                   Pizza NOW is web application that allows users to report
                   domestic violence, disguised as a pizza delivery app
                 </ImgP>
-                <a href="http://pizza-now.herokuapp.com/">
+                <a href="https://github.com/pizza-now/earthxhack20">
                   <Button>View Site</Button>
                 </a>
               </ImageMid>
@@ -66,7 +66,7 @@ const Portfolio = props => {
                   GraceShopper is an e-commerce website where guests and user
                   can purchase groceries
                 </ImgP>
-                <a href="https://graceshopper-captn-thunk.herokuapp.com/">
+                <a href="https://github.com/Captain-Thunk-Grace-Shopper/Grace-Shopper">
                   <Button>View Site</Button>
                 </a>
               </ImageMid>
