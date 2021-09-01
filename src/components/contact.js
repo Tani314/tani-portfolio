@@ -10,7 +10,7 @@ const Contact = props => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "gmail",
+        "service_t88lyfk",
         "template_rTlM77lf",
         e.target,
         "user_9ByIUdluMXbyVpzgkRLLA"
