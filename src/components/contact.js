@@ -4,22 +4,24 @@ import LinkedIn from "../assets/LinkedIn.png";
 import email from "../assets/email.png";
 import github from "../assets/github.png";
 
+
 import "../styles/contact.css";
+
+
 const Contact = props => {
   function sendEmail(e) {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_t88lyfk",
+    emailjs.sendForm(
+        "service_0rnrnbv",
         "template_rTlM77lf",
         e.target,
         "user_9ByIUdluMXbyVpzgkRLLA"
       )
       .then(
-        result => {
+        (result) => {
           console.log(result.text);
         },
-        error => {
+        (error) => {
           console.log(error.text);
         }
       );
