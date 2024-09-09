@@ -35,7 +35,7 @@ const Portfolio = (props) => {
                   domestic violence, disguised as a pizza delivery app
                 </ImgP>
                 <a href="https://github.com/pizza-now/earthxhack20">
-                  <Button>View Site</Button>
+                  <Button>View Code</Button>
                 </a>
               </ImageMid>
             </ImageContain>
@@ -53,7 +53,7 @@ const Portfolio = (props) => {
                 </ImgP>
 
                 <a href="https://stormlooper.github.io/Exit/">
-                  <Button>View Site</Button>
+                  <Button>View Code</Button>
                 </a>
               </ImageMid>
             </ImageContain>
@@ -67,7 +67,7 @@ const Portfolio = (props) => {
                   can purchase groceries
                 </ImgP>
                 <a href="https://github.com/Captain-Thunk-Grace-Shopper/Grace-Shopper">
-                  <Button>View Site</Button>
+                  <Button>View Code</Button>
                 </a>
               </ImageMid>
             </ImageContain>
@@ -82,7 +82,7 @@ const Portfolio = (props) => {
                   animations.
                 </ImgP>
                 <a href="https://github.com/Tani314/Armor-Wing">
-                  <Button>View Site</Button>
+                  <Button>View Code</Button>
                 </a>
               </ImageMid>
             </ImageContain>
@@ -96,7 +96,7 @@ const Portfolio = (props) => {
                   users to search for nearby Covid testing centers
                 </ImgP>
                 <a href="https://get-tested-covid19.org/">
-                  <Button>View Site</Button>
+                  <Button>View Code</Button>
                 </a>
               </ImageMid>
             </ImageContain>
