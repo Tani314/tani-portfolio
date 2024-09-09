@@ -11,7 +11,7 @@ import {
   Image,
   Group,
   Link,
-  MainGroup
+  MainGroup,
 } from "../styles/about";
 
 const About = ({ imgSrc = IMG_2877 }) => {
@@ -27,7 +27,14 @@ const About = ({ imgSrc = IMG_2877 }) => {
               <Image src={imgSrc} alt="Portrait of the developer" />
               <Heading>Who am I?</Heading>
               <Paragraph>
-                I am a Full Stack Software Engineer based in New York. I’m passionate about building scalable, user-centric applications. With experience in technologies like React, Node.js, and AI/ML systems, I love solving complex problems and creating impactful solutions. My focus is on delivering innovative, ethical technology that drives positive change. Outside of work, I’m always exploring new challenges and staying curious about the latest in tech.
+                I am a Full Stack Software Engineer based in New York. I’m
+                passionate about building scalable, user-centric applications.
+                With experience in technologies like React, Node.js, and AI/ML
+                systems, I love solving complex problems and creating impactful
+                solutions. My focus is on delivering innovative, ethical
+                technology that drives positive change. Outside of work, I’m
+                always exploring new challenges and staying curious about the
+                latest in tech.
               </Paragraph>
               <a href="#contact">
                 <Link>Let's work together</Link>

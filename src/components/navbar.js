@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = props => {
+const Navbar = (props) => {
   return (
     <nav className="navbar">
       <div className="nav-text">

@@ -22,14 +22,17 @@ const Home = () => {
                 );
                 let pts = Line.subpoints(line, 200);
 
-                let pps = pts.map(p =>
+                let pps = pts.map((p) =>
                   Geom.perpendicular(p.$subtract(line[0]).unit()).add(p)
                 );
 
                 let angle = (space.pointer.x / space.size.x) * Const.two_pi * 2;
 
                 pps.forEach((pp, i) => {
-                  let t = (i / 200) * Const.two_pi + angle + Num.cycle((time % 10000) / 10000);
+                  let t =
+                    (i / 200) * Const.two_pi +
+                    angle +
+                    Num.cycle((time % 10000) / 10000);
 
                   if (i % 2 === 0) {
                     pp[0].to(
@@ -51,7 +54,8 @@ const Home = () => {
               <div className="title">
                 <div className="block"></div>
                 <div className="p1">
-                  <div className="p3">Hello, I'm </div>Nuzhat Tabassum Tani<div className="span1"></div>
+                  <div className="p3">Hello, I'm </div>Nuzhat Tabassum Tani
+                  <div className="span1"></div>
                 </div>
               </div>
               <div className="role">

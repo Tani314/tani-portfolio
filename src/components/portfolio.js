@@ -10,7 +10,7 @@ import {
   ImgText,
   ImageContain,
   ImageColumn,
-  ImgP
+  ImgP,
 } from "../styles/portfolio";
 import Pizza from "../assets/Pizza.jpg";
 import GraceShopper from "../assets/GraceShopper.jpg";
@@ -18,7 +18,7 @@ import GetTested from "../assets/Get-Tested.jpg";
 import Exit from "../assets/Exit.jpg";
 import Armor from "../assets/Armor.gif";
 
-const Portfolio = props => {
+const Portfolio = (props) => {
   return (
     <div id="portfolio">
       <SectionWrapper>
