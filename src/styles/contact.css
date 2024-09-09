@@ -103,3 +103,8 @@ a {
 .formdesign {
   width: 50%;
 }
+
+.statusMessage{
+  color: beige;
+  font-size: 15px;
+}

@@ -14,32 +14,32 @@ import {
   MainGroup
 } from "../styles/about";
 
-const About = props => {
+const About = ({ imgSrc = IMG_2877 }) => {
   return (
-    //image
     <div id="about">
       <SectionWrapper>
         <Wrapper>
           <Title>ABOUT</Title>
           <HR />
 
-<MainGroup>
-          <Group>
-            <Image src={IMG_2877} />
+          <MainGroup>
+            <Group>
+              <Image src={imgSrc} alt="Portrait of the developer" />
               <Heading>Who am I?</Heading>
               <Paragraph>
-                I am a Full Stack Software Engineer based in Brooklyn, New York. I’m passionate about building scalable, user-centric applications. With experience in technologies like React, Node.js, and AI/ML systems, I love solving complex problems and creating impactful solutions. My focus is on delivering innovative, ethical technology that drives positive change. Outside of work, I’m always exploring new challenges and staying curious about the latest in tech.
+                I am a Full Stack Software Engineer based in New York. I’m passionate about building scalable, user-centric applications. With experience in technologies like React, Node.js, and AI/ML systems, I love solving complex problems and creating impactful solutions. My focus is on delivering innovative, ethical technology that drives positive change. Outside of work, I’m always exploring new challenges and staying curious about the latest in tech.
               </Paragraph>
               <a href="#contact">
                 <Link>Let's work together</Link>
               </a>
             </Group>
 
-          <Skills />
+            <Skills />
           </MainGroup>
         </Wrapper>
       </SectionWrapper>
     </div>
   );
 };
+
 export default About;
