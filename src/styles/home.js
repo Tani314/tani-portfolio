@@ -207,7 +207,7 @@ transition: opacity 1s ease; /* Smooth transition for appearance */
 }
 
 &:hover::before {
-  content: "Learn more about me &#2193"; /* Updated hover content */
+  content: "Learn more about me \\2193"; /* Updated hover content */
 }
 @media (max-width: 768px) {
   font-size: 14px; /* Smaller font size for small screens */
