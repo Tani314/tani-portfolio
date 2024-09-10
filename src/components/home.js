@@ -1,13 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { SectionWrapper } from "../styles/sameStyle";
-import { CanvasWrapper, HomeWrapper, HomeText } from "../styles/home";
+import {
+  CanvasWrapper,
+  HomeWrapper,
+  HomeText,
+  Title, Span1, Lines, ClickMe, 
+} from "../styles/home";
 import { Geom, Pt, Line, Const, Group, Num } from "pts/dist/es5";
 import { QuickStartCanvas } from "react-pts-canvas";
-import "../styles/home.css";
 
 const Home = () => {
+  const [animateLines, setAnimateLines] = useState(false);
+  const [showSecondLine, setShowSecondLine] = useState(false);
+  const [isButtonVisible, setIsButtonVisible] = useState(false);
+
+  useEffect(() => {
+    // Start the typewriter animation
+    const timer1 = setTimeout(() => {
+      setAnimateLines(true);
+    }, 100);
+
+    // Show the second line after the first line animation ends
+    const timer2 = setTimeout(() => {
+      setShowSecondLine(true);
+    }, 4000); // Adjust the delay to match the duration of the typewriter effect
+
+    // Show the button after both lines are done
+    const timer3 = setTimeout(() => {
+      setIsButtonVisible(true);
+    }, 8000); // Adjust delay to be after both lines
+
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+      clearTimeout(timer3);
+    };
+  }, []);
+
+
   return (
-    <div id="home">
+    <div>
       <SectionWrapper>
         <HomeWrapper>
           <CanvasWrapper>
@@ -51,20 +83,24 @@ const Home = () => {
               }}
             />
             <HomeText>
-              <div className="title">
-                <div className="block"></div>
-                <div className="p1">
-                  <div className="p3">Hello, I'm </div>Nuzhat Tabassum Tani
-                  <div className="span1"></div>
-                </div>
-              </div>
-              <div className="role">
-                <div className="block2"></div>
-                <div className="p2">I'm a Full-Stack Software Engineer.</div>
-              </div>
-              <a href="#about" className="clickme">
-                <span>View my site &#8594;</span>
-              </a>
+                 {/* Title Section */}
+                 <Title>
+        <Lines animate={animateLines} >Hello, I'm Nuzhat Tabassum Tani</Lines>
+        {showSecondLine && (
+          <>   
+          <Lines animate={animateLines}>
+          I am a Full Stack Software Engineer
+        </Lines>
+   <Span1/>
+   </>
+       
+        )}
+     
+      </Title>
+
+      <ClickMe href="#about" visible={isButtonVisible}>
+        <span>Learn More About Me &#8594;</span>
+      </ClickMe>
             </HomeText>
           </CanvasWrapper>
         </HomeWrapper>
