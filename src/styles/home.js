@@ -1,4 +1,4 @@
-import styled, { keyframes,css } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 
 export const HomeWrapper = styled.div`
   width: 100%;
@@ -14,7 +14,7 @@ export const CanvasWrapper = styled.div`
 
 // Keyframe animations
 // Keyframe animations
-const typewriter  = keyframes`
+const typewriter = keyframes`
 from {
   width: 0;
 }
@@ -118,67 +118,68 @@ export const Title = styled.div`
   }
 `;
 export const Lines = styled.div`
-position: relative;
-display: inline-block;
-overflow: hidden;
-white-space: nowrap;
-font-family: "Merriweather", serif;
-font-size: 29px;
-font-weight: bold;
-color: white;
-animation: ${({ animate }) => animate && css`
-  ${typewriter} 4s steps(40, end) forwards,
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Merriweather", serif;
+  font-size: 29px;
+  font-weight: bold;
+  color: white;
+  animation: ${({ animate }) =>
+    animate &&
+    css`
+      ${typewriter} 4s steps(40, end) forwards,
   ${blink} 0.75s step-end infinite
-`};
-@media (max-width: 1024px) {
-  font-size: 24px; /* Adjust font size for medium screens */
-}
+    `};
+  @media (max-width: 1024px) {
+    font-size: 24px; /* Adjust font size for medium screens */
+  }
 
-@media (max-width: 768px) {
-  font-size: 20px; /* Smaller font size for small screens */
-}
+  @media (max-width: 768px) {
+    font-size: 20px; /* Smaller font size for small screens */
+  }
 
-@media (max-width: 480px) {
-  font-size: 16px; 
-}
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const Span1 = styled.span`
-position: absolute;
-right: 0;
-color: white;
-bottom: 0;
-width: 7px;
-height: 7px;
-background: transparent;
-border-radius: 50%;
-animation: ${popIn} 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-animation-delay: 3s; /* Adjust based on when you want it to appear */
+  position: absolute;
+  right: 0;
+  color: white;
+  bottom: 0;
+  width: 7px;
+  height: 7px;
+  background: transparent;
+  border-radius: 50%;
+  animation: ${popIn} 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 3s; /* Adjust based on when you want it to appear */
 
-@media (max-width: 1024px) {
-  width: 6px; /* Slightly smaller size for medium screens */
-  height: 6px;
-  right: 10px; /* Adjust position if necessary */
-  bottom: 10px; /* Adjust position if necessary */
-}
+  @media (max-width: 1024px) {
+    width: 6px; /* Slightly smaller size for medium screens */
+    height: 6px;
+    right: 10px; /* Adjust position if necessary */
+    bottom: 10px; /* Adjust position if necessary */
+  }
 
-@media (max-width: 768px) {
-  width: 5px; /* Smaller size for small screens */
-  height: 5px;
-  right: 5px; /* Adjust position if necessary */
-  bottom: 8px; /* Adjust position if necessary */
-}
+  @media (max-width: 768px) {
+    width: 5px; /* Smaller size for small screens */
+    height: 5px;
+    right: 5px; /* Adjust position if necessary */
+    bottom: 8px; /* Adjust position if necessary */
+  }
 
-@media (max-width: 480px) {
-  width: 4px; /* Even smaller size for extra-small screens */
-  height: 4px;
-  right: 3px; /* Adjust position if necessary */
-  bottom: 5px; /* Adjust position if necessary */
-}
+  @media (max-width: 480px) {
+    width: 4px; /* Even smaller size for extra-small screens */
+    height: 4px;
+    right: 3px; /* Adjust position if necessary */
+    bottom: 5px; /* Adjust position if necessary */
+  }
 `;
 
-
-export const ClickMe = styled.a`
+export const  ClickMe = styled.a(props => `
 color: white;
 background-color: transparent;
 font-family: "Merriweather", serif;
@@ -192,16 +193,10 @@ border-radius: 12px; /* Rounded corners */
 text-decoration: none; /* Remove underline */
 display: inline-block; /* Ensures padding and border are applied correctly */
 text-align: center; /* Center text inside the box */
-opacity: 0; /* Initially hidden */
+  opacity: ${props.visible ? 1 : 0};
 transition: opacity 1s ease; /* Smooth transition for appearance */
 
 /* Make it visible after animations */
-${({ visible }) =>
-  visible &&
-  `
-  opacity: 1;
-  transition: opacity 1s ease;
-`}
 
 &:hover {
   background-color: #663399; /* Background color on hover */
@@ -212,7 +207,7 @@ ${({ visible }) =>
 }
 
 &:hover::before {
-  content: "Learn more about me \2193"; /* Updated hover content */
+  content: "Learn more about me &#2193"; /* Updated hover content */
 }
 @media (max-width: 768px) {
   font-size: 14px; /* Smaller font size for small screens */
@@ -225,5 +220,4 @@ ${({ visible }) =>
   padding: 6px 10px; /* Adjust padding for extra-small screens */
   margin-left: 20px; /* Adjust margin for extra-small screens */
 }
-`;
-
+`);

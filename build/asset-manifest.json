@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ee11096.css",
-    "main.js": "/static/js/main.f5d36977.js",
+    "main.css": "/static/css/main.ba2b85fa.css",
+    "main.js": "/static/js/main.69fc9e7f.js",
     "static/media/Armor.gif": "/static/media/Armor.2ca666976163de82bc02.gif",
     "static/media/Exit.jpg": "/static/media/Exit.103dab94e3e73d5689c1.jpg",
     "static/media/GraceShopper.jpg": "/static/media/GraceShopper.73f6a602f6d888e94017.jpg",
@@ -13,13 +13,13 @@
     "static/media/chai.png": "/static/media/chai.3002f262334250cac298.png",
     "static/media/REST.png": "/static/media/REST.3cda7786ddadf9526981.png",
     "static/media/Postgres.png": "/static/media/Postgres.6c5d698f195dac2fe5af.png",
-    "static/media/react.svg": "/static/media/react.903d77ad940b12efaddde2484397ad4a.svg",
     "index.html": "/index.html",
-    "main.8ee11096.css.map": "/static/css/main.8ee11096.css.map",
-    "main.f5d36977.js.map": "/static/js/main.f5d36977.js.map"
+    "static/media/react.svg": "/static/media/react.903d77ad940b12efaddde2484397ad4a.svg",
+    "main.ba2b85fa.css.map": "/static/css/main.ba2b85fa.css.map",
+    "main.69fc9e7f.js.map": "/static/js/main.69fc9e7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ee11096.css",
-    "static/js/main.f5d36977.js"
+    "static/css/main.ba2b85fa.css",
+    "static/js/main.69fc9e7f.js"
   ]
 }
