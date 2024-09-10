@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8ee11096.css",
+    "main.js": "/static/js/main.f5d36977.js",
+    "static/media/Armor.gif": "/static/media/Armor.2ca666976163de82bc02.gif",
+    "static/media/Exit.jpg": "/static/media/Exit.103dab94e3e73d5689c1.jpg",
+    "static/media/GraceShopper.jpg": "/static/media/GraceShopper.73f6a602f6d888e94017.jpg",
+    "static/media/Pizza.jpg": "/static/media/Pizza.65a75c95e92b7c8915c0.jpg",
+    "static/media/IMG_2877.jpeg": "/static/media/IMG_2877.2d64602a075b96e90af5.jpeg",
+    "static/media/jasmine.png": "/static/media/jasmine.200e3253dfa6d9daebf6.png",
+    "static/media/Get-Tested.jpg": "/static/media/Get-Tested.04bb95353610ac03dc32.jpg",
+    "static/media/bootstrap.png": "/static/media/bootstrap.f347ec0cc7da9fb0ff35.png",
+    "static/media/chai.png": "/static/media/chai.3002f262334250cac298.png",
+    "static/media/REST.png": "/static/media/REST.3cda7786ddadf9526981.png",
+    "static/media/Postgres.png": "/static/media/Postgres.6c5d698f195dac2fe5af.png",
+    "static/media/react.svg": "/static/media/react.903d77ad940b12efaddde2484397ad4a.svg",
+    "index.html": "/index.html",
+    "main.8ee11096.css.map": "/static/css/main.8ee11096.css.map",
+    "main.f5d36977.js.map": "/static/js/main.f5d36977.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ee11096.css",
+    "static/js/main.f5d36977.js"
+  ]
+}
