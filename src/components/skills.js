@@ -24,7 +24,7 @@ import angular from "../assets/angular.png";
 import aws from "../assets/aws.png";
 import docker from "../assets/docker.png";
 import java from "../assets/java.jpeg";
-import apache from "../assets/apache.png";
+import apache from "../assets/apache.png"
 import "../styles/skills.css";
 
 const Skills = props => {
