@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { SectionWrapper } from "../styles/sameStyle";
 import {
   CanvasWrapper,
@@ -6,85 +6,110 @@ import {
   HomeText,
   Title, Span1, Lines, ClickMe, 
 } from "../styles/home";
-import { Geom, Pt, Line, Const, Group, Num } from "pts";
-import { QuickStartCanvas } from "react-pts-canvas";
 
 const Home = () => {
+  const canvasRef = useRef(null);
   const [animateLines, setAnimateLines] = useState(false);
   const [showSecondLine, setShowSecondLine] = useState(false);
   const [isButtonVisible, setIsButtonVisible] = useState(false);
 
   useEffect(() => {
-    // Start the typewriter animation
-    const timer1 = setTimeout(() => {
-      setAnimateLines(true);
-    }, 100);
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+    let points = [];
 
-    // Show the second line after the first line animation ends
-    const timer2 = setTimeout(() => {
-      setShowSecondLine(true);
-    }, 4000); // Adjust the delay to match the duration of the typewriter effect
+    // Generate 200 random points
+    for (let i = 0; i < 200; i++) {
+      points.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        dx: Math.random() * 0.5 - 0.25,
+        dy: Math.random() * 0.5 - 0.25
+      });
+    }
 
-    // Show the button after both lines are done
-    const timer3 = setTimeout(() => {
-      setIsButtonVisible(true);
-    }, 8000); // Adjust delay to be after both lines
+    function draw() {
+      ctx.clearRect(0, 0, width, height);
 
+      // Center point (like space.center in Pts.js)
+      const centerX = width / 2;
+      const centerY = height / 2;
+
+      points.forEach(p => {
+        // Move points slightly in a circular pattern
+        const dx = centerX - p.x;
+        const dy = centerY - p.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const moveDist = Math.min(1, 1 - dist / (width / 2)) * 2;
+
+        p.x += p.dx * moveDist;
+        p.y += p.dy * moveDist;
+
+        // Bounce points within canvas bounds
+        if (p.x < 0 || p.x > width) p.dx *= -1;
+        if (p.y < 0 || p.y > height) p.dy *= -1;
+
+        // Draw the points
+        ctx.fillStyle = ['#f03', '#09f', '#0c6'][Math.floor(Math.random() * 3)];
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 3, 0, 2 * Math.PI);
+        ctx.fill();
+
+        // Draw a line from the point to the center
+        ctx.strokeStyle = `rgba(255, 255, 255, ${Math.max(0.1, 1 - dist / (width / 2))})`;
+        ctx.lineWidth = Math.max(0.5, 1 - dist / (width / 2));
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(centerX, centerY);
+        ctx.stroke();
+      });
+      
+      requestAnimationFrame(draw);
+    }
+
+    // Start animation
+    draw();
+
+    // Resize canvas on window resize
+    const handleResize = () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    };
+
+    window.addEventListener('resize', handleResize);
+      // Start the typewriter animation
+      const timer1 = setTimeout(() => {
+        setAnimateLines(true);
+      }, 100);
+  
+      // Show the second line after the first line animation ends
+      const timer2 = setTimeout(() => {
+        setShowSecondLine(true);
+      }, 4000); // Adjust the delay to match the duration of the typewriter effect
+  
+      // Show the button after both lines are done
+      const timer3 = setTimeout(() => {
+        setIsButtonVisible(true);
+      }, 8000); // Adjust delay to be after both lines
     return () => {
+      window.removeEventListener('resize', handleResize);
       clearTimeout(timer1);
       clearTimeout(timer2);
       clearTimeout(timer3);
     };
   }, []);
 
-
   return (
     <div>
       <SectionWrapper>
         <HomeWrapper>
           <CanvasWrapper>
-            <QuickStartCanvas
-              background="#0A0A29"
-              style={{ height: "100vh" }}
-              onAnimate={(space, form, time) => {
-                let offset = space.size.$multiply(0.2).y;
-                let line = new Group(
-                  new Pt(0, offset),
-                  new Pt(space.size.x, space.size.y - offset)
-                );
-                let pts = Line.subpoints(line, 200);
-
-                let pps = pts.map((p) =>
-                  Geom.perpendicular(p.$subtract(line[0]).unit()).add(p)
-                );
-
-                let angle = (space.pointer.x / space.size.x) * Const.two_pi * 2;
-
-                pps.forEach((pp, i) => {
-                  let t =
-                    (i / 200) * Const.two_pi +
-                    angle +
-                    Num.cycle((time % 10000) / 10000);
-
-                  if (i % 2 === 0) {
-                    pp[0].to(
-                      Geom.interpolate(pts[i], pp[0], Math.sin(t) * offset * 2)
-                    );
-                    pp[1].to(pts[i]);
-                    form.stroke("#9C64F4", 1).line(pp);
-                  } else {
-                    pp[0].to(pts[i]);
-                    pp[1].to(
-                      Geom.interpolate(pts[i], pp[1], Math.cos(t) * offset * 2)
-                    );
-                    form.stroke("#0FA3A3", 1).line(pp);
-                  }
-                });
-              }}
-            />
+            <canvas ref={canvasRef} style={{ background: "#0A0A29", height: "100vh", width: "100vw" }}></canvas>
             <HomeText>
-                 {/* Title Section */}
-                 <Title>
+              {/* Title Section */}
+              <Title>
         <Lines animate={animateLines} >Hello, I'm Nuzhat Tabassum Tani</Lines>
         {showSecondLine && (
           <>   
@@ -98,7 +123,7 @@ const Home = () => {
      
       </Title>
 
-      <ClickMe href="#about" visible={isButtonVisible}>
+              <ClickMe href="#about" visible={isButtonVisible}>
         <span>Learn More About Me &#8594;</span>
       </ClickMe>
             </HomeText>
