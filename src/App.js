@@ -4,8 +4,8 @@ import { Navbar, Home, About, Projects, Contact } from "./components";
 const App = () => {
   return (
     <>
-      <Home />
       <Navbar />
+      <Home />
       <About />
       <Projects />
       <Contact />
