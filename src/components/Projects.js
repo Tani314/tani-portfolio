@@ -11,7 +11,7 @@ import {
   ImageContain,
   ImageColumn,
   ImgP,
-} from "../styles/portfolio";
+} from "../styles/projects";
 import Task from "../assets/Task.png";
 import Pizza from "../assets/Pizza.jpg";
 import GraceShopper from "../assets/GraceShopper.jpg";
@@ -19,9 +19,9 @@ import GetTested from "../assets/Get-Tested.jpg";
 import Exit from "../assets/Exit.jpg";
 import Armor from "../assets/Armor.gif";
 
-const Portfolio = (props) => {
+const Projects = (props) => {
   return (
-    <div id="portfolio">
+    <div id="projects">
       <SectionWrapper>
         <Wrapper>
           <Title>Projects</Title>
@@ -131,4 +131,4 @@ const Portfolio = (props) => {
     </div>
   );
 };
-export default Portfolio;
+export default Projects;
