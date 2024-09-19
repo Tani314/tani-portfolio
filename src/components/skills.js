@@ -1,5 +1,4 @@
 import React from "react";
-import arkit from "../assets/arkit.jpeg";
 import bootstrap from "../assets/bootstrap.png";
 import chai from "../assets/chai.png";
 import CSS from "../assets/CSS.png";
@@ -19,18 +18,29 @@ import redux from "../assets/redux.png";
 import REST from "../assets/REST.png";
 import oauth from "../assets/oauth.png";
 import sequelize from "../assets/sequelize.png";
-import unity from "../assets/unity.png";
+import typescript from "../assets/typescript.png";
+import go from "../assets/go.png";
+import angular from "../assets/angular.png";
+import aws from "../assets/aws.png";
+import docker from "../assets/docker.png";
+import java from "../assets/java.jpeg";
+import apache from "../assets/apache.png";
 import "../styles/skills.css";
 
 const Skills = props => {
   return (
     <div id="skills">
       <div className="all">
-        <h3>Skills</h3>
+        <h3>Key Skills</h3>
         <div className="logo">
           <div className="skill">
             <img src={JavaScript} width="50" height="50" alt="JavaScript" />
             <span className="skilltext">JavaScript</span>
+          </div>
+
+          <div className="skill">
+            <img src={typescript} width="50" height="50" alt="TypeScript" />
+            <span className="skilltext">TypeScript</span>
           </div>
 
           <div className="skill">
@@ -40,17 +50,28 @@ const Skills = props => {
           </div>
 
           <div className="skill">
-            <img src={sequelize} width="50" height="50" alt="sequelize" />
+            <img src={sequelize} width="50" height="50" alt="Sequelize" />
             <span className="skilltext">Sequelize</span>
           </div>
 
           <div className="skill">
-            <img src={react} width="50" height="50" alt="react" />
+            <img src={go} width="50" height="50" alt="Golang" />
+            <span className="skilltext">Golang</span>
+          </div>
+
+          <div className="skill">
+            <img src={react} width="50" height="50" alt="React" />
             <span className="skilltext">React</span>
           </div>
 
           <div className="skill">
-            <img src={redux} width="50" height="50" alt="redux" />
+            <img src={angular} width="50" height="50" alt="Angular" />
+            <span className="skilltext">Angular</span>
+          </div>
+
+
+          <div className="skill">
+            <img src={redux} width="50" height="50" alt="Redux" />
             <span className="skilltext">Redux</span>
           </div>
 
@@ -75,12 +96,12 @@ const Skills = props => {
           </div>
 
           <div className="skill">
-            <img src={github} width="50" height="50" alt="github" />
+            <img src={github} width="50" height="50" alt="Github" />
             <span className="skilltext">Github</span>
           </div>
 
           <div className="skill">
-            <img src={express} width="50" height="50" alt="express" />
+            <img src={express} width="50" height="50" alt="Express" />
             <span className="skilltext">Express.Js</span>
           </div>
 
@@ -90,27 +111,46 @@ const Skills = props => {
           </div>
 
           <div className="skill">
-            <img src={mocha} width="50" height="50" alt="mocha" />
+            <img src={mocha} width="50" height="50" alt="Mocha" />
             <span className="skilltext">Mocha</span>
           </div>
 
           <div className="skill">
-            <img src={chai} width="50" height="50" alt="chai" />
+            <img src={chai} width="50" height="50" alt="Chai" />
             <span className="skilltext">Chai</span>
           </div>
 
           <div className="skill">
-            <img src={jasmine} width="50" height="50" alt="jasmine" />
+            <img src={jasmine} width="50" height="50" alt="Jasmine" />
             <span className="skilltext">Jasmine</span>
           </div>
 
           <div className="skill">
-            <img src={bootstrap} width="50" height="50" alt="bootstrap" />
+            <img src={bootstrap} width="50" height="50" alt="Bootstrap" />
             <span className="skilltext">Bootstrap</span>
           </div>
 
           <div className="skill">
-            <img src={graphql} width="50" height="50" alt="graphql" />
+            <img src={aws} width="50" height="50" alt="AWS" />
+            <span className="skilltext">AWS</span>
+          </div>
+
+          <div className="skill">
+            <img src={docker} width="50" height="50" alt="Docker" />
+            <span className="skilltext">Docker</span>
+          </div>
+
+          <div className="skill">
+            <img src={java} width="50" height="50" alt="Java" />
+            <span className="skilltext">Java </span>
+          </div>
+
+          <div className="skill">
+            <img src={apache} width="50" height="50" alt="Apache Kafka" />
+            <span className="skilltext">Apache Kafka</span>
+          </div>
+          <div className="skill">
+            <img src={graphql} width="50" height="50" alt="Graphql" />
             <span className="skilltext">GraphQL</span>
           </div>
 
@@ -120,19 +160,11 @@ const Skills = props => {
           </div>
 
           <div className="skill">
-            <img src={oauth} width="50" height="50" alt="oauth" />
+            <img src={oauth} width="50" height="50" alt="Oauth" />
             <span className="skilltext">OAuth</span>
           </div>
 
-          <div className="skill">
-            <img src={unity} width="50" height="50" alt="unity" />
-            <span className="skilltext">Unity</span>
-          </div>
-
-          <div className="skill">
-            <img src={arkit} width="50" height="50" alt="arkit" />
-            <span className="skilltext">ARkit</span>
-          </div>
+        
         </div>
       </div>
     </div>
