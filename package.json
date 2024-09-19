@@ -12,13 +12,13 @@
     "@testing-library/user-event": "^7.1.2",
     "emailjs-com": "^2.6.4",
     "framer-motion": "^2.9.4",
-    "pts": "^0.9.4",
+    "pts": "^0.12.9",
     "react": "^16.13.1",
-
     "react-dom": "^16.13.1",
     "react-pts-canvas": "^0.2.8",
     "react-router-dom": "^6.26.2",
     "react-scripts": "^5.0.1",
+    "serve": "^14.2.3",
     "styled-components": "^5.1.1"
   },
   "scripts": {

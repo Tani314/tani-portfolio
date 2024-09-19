@@ -6,7 +6,7 @@ import {
   HomeText,
   Title, Span1, Lines, ClickMe, 
 } from "../styles/home";
-import { Geom, Pt, Line, Const, Group, Num } from "pts/dist/es5";
+import { Geom, Pt, Line, Const, Group, Num } from "../../node_modules/pts/dist/index.js";
 import { QuickStartCanvas } from "react-pts-canvas";
 
 const Home = () => {
