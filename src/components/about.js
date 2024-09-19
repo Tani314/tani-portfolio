@@ -1,5 +1,5 @@
 import React from "react";
-import Skills from "./Skills";
+import Skills from "./skills";
 import IMG_2877 from "../assets/IMG_2877.jpeg";
 import { SectionWrapper } from "../styles/sameStyle";
 import {
